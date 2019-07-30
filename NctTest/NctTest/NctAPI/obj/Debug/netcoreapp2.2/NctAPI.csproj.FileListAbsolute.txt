@@ -1,0 +1,17 @@
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctAPI\bin\Debug\netcoreapp2.2\NctTools.dll
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctAPI\obj\Debug\netcoreapp2.2\NctAPI.csprojAssemblyReference.cache
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctAPI\obj\Debug\netcoreapp2.2\NctAPI.csproj.CoreCompileInputs.cache
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctAPI\obj\Debug\netcoreapp2.2\NctAPI.RazorAssemblyInfo.cache
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctAPI\obj\Debug\netcoreapp2.2\NctAPI.RazorAssemblyInfo.cs
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctAPI\obj\Debug\netcoreapp2.2\NctAPI.AssemblyInfoInputs.cache
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctAPI\obj\Debug\netcoreapp2.2\NctAPI.AssemblyInfo.cs
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctAPI\obj\Debug\netcoreapp2.2\NctAPI.RazorTargetAssemblyInfo.cache
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctAPI\bin\Debug\netcoreapp2.2\NctAPI.deps.json
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctAPI\bin\Debug\netcoreapp2.2\NctAPI.runtimeconfig.json
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctAPI\bin\Debug\netcoreapp2.2\NctAPI.runtimeconfig.dev.json
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctAPI\bin\Debug\netcoreapp2.2\NctAPI.dll
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctAPI\bin\Debug\netcoreapp2.2\NctAPI.pdb
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctAPI\bin\Debug\netcoreapp2.2\NctTools.pdb
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctAPI\obj\Debug\netcoreapp2.2\NctAPI.csproj.CopyComplete
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctAPI\obj\Debug\netcoreapp2.2\NctAPI.dll
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctAPI\obj\Debug\netcoreapp2.2\NctAPI.pdb
