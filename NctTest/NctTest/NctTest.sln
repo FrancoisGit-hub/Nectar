@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NctAPI", "NctAPI\NctAPI.csproj", "{5497A546-E9B6-4C66-B4EB-54B7FC4759B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NctTools", "NctTools\NctTools.csproj", "{738E5E71-D1E2-466D-BF04-9EF0CF698989}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5497A546-E9B6-4C66-B4EB-54B7FC4759B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5497A546-E9B6-4C66-B4EB-54B7FC4759B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5497A546-E9B6-4C66-B4EB-54B7FC4759B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5497A546-E9B6-4C66-B4EB-54B7FC4759B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{738E5E71-D1E2-466D-BF04-9EF0CF698989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{738E5E71-D1E2-466D-BF04-9EF0CF698989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{738E5E71-D1E2-466D-BF04-9EF0CF698989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{738E5E71-D1E2-466D-BF04-9EF0CF698989}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49902B21-F6B0-4498-8DFC-FEADC5C9429B}
+	EndGlobalSection
+EndGlobal

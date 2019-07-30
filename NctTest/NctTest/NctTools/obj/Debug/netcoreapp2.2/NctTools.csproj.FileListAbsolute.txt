@@ -1,0 +1,9 @@
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctTools\bin\Debug\netcoreapp2.2\NctTools.deps.json
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctTools\bin\Debug\netcoreapp2.2\NctTools.dll
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctTools\bin\Debug\netcoreapp2.2\NctTools.pdb
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctTools\obj\Debug\netcoreapp2.2\NctTools.csprojAssemblyReference.cache
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctTools\obj\Debug\netcoreapp2.2\NctTools.csproj.CoreCompileInputs.cache
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctTools\obj\Debug\netcoreapp2.2\NctTools.AssemblyInfoInputs.cache
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctTools\obj\Debug\netcoreapp2.2\NctTools.AssemblyInfo.cs
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctTools\obj\Debug\netcoreapp2.2\NctTools.dll
+C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctTools\obj\Debug\netcoreapp2.2\NctTools.pdb
