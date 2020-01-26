@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Christopher\\Desktop\\NctTest\\NctAPI\\NctAPI.csproj": {}
+    "C:\\repo\\Nectar\\NctTest\\NctTest\\NctAPI\\NctAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Christopher\\Desktop\\NctTest\\NctAPI\\NctAPI.csproj": {
+    "C:\\repo\\Nectar\\NctTest\\NctTest\\NctAPI\\NctAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Christopher\\Desktop\\NctTest\\NctAPI\\NctAPI.csproj",
+        "projectUniqueName": "C:\\repo\\Nectar\\NctTest\\NctTest\\NctAPI\\NctAPI.csproj",
         "projectName": "NctAPI",
-        "projectPath": "C:\\Users\\Christopher\\Desktop\\NctTest\\NctAPI\\NctAPI.csproj",
-        "packagesPath": "C:\\Users\\Christopher\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Christopher\\Desktop\\NctTest\\NctAPI\\obj\\",
+        "projectPath": "C:\\repo\\Nectar\\NctTest\\NctTest\\NctAPI\\NctAPI.csproj",
+        "packagesPath": "C:\\Users\\gitte\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\Nectar\\NctTest\\NctTest\\NctAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Christopher\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gitte\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +31,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\Christopher\\Desktop\\NctTest\\NctTools\\NctTools.csproj": {
-                "projectPath": "C:\\Users\\Christopher\\Desktop\\NctTest\\NctTools\\NctTools.csproj"
+              "C:\\repo\\Nectar\\NctTest\\NctTest\\NctTools\\NctTools.csproj": {
+                "projectPath": "C:\\repo\\Nectar\\NctTest\\NctTest\\NctTools\\NctTools.csproj"
               }
             }
           }
@@ -70,28 +69,33 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Christopher\\Desktop\\NctTest\\NctTools\\NctTools.csproj": {
+    "C:\\repo\\Nectar\\NctTest\\NctTest\\NctTools\\NctTools.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Christopher\\Desktop\\NctTest\\NctTools\\NctTools.csproj",
+        "projectUniqueName": "C:\\repo\\Nectar\\NctTest\\NctTest\\NctTools\\NctTools.csproj",
         "projectName": "NctTools",
-        "projectPath": "C:\\Users\\Christopher\\Desktop\\NctTest\\NctTools\\NctTools.csproj",
-        "packagesPath": "C:\\Users\\Christopher\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Christopher\\Desktop\\NctTest\\NctTools\\obj\\",
+        "projectPath": "C:\\repo\\Nectar\\NctTest\\NctTest\\NctTools\\NctTools.csproj",
+        "packagesPath": "C:\\Users\\gitte\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\Nectar\\NctTest\\NctTest\\NctTools\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Christopher\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gitte\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -124,10 +128,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
