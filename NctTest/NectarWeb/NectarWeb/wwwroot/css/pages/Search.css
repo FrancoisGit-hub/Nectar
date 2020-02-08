@@ -1,4 +1,22 @@
 ﻿.form-center {
-    text-align: center;
-    margin: 0 40% 0 40%;
+  text-align: center;
+  margin: 0 37% 0 37%;
+}
+
+.background-bgform {
+  background-image: url(/img/bgform-color.png);
+  width: 100%;
+  height: 1000px;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.resize-swarm {
+  width: 150px!important;
+  border-radius: 50%;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.padding-img {
+  padding: 0 15px;
 }
