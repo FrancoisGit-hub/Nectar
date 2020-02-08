@@ -13,7 +13,6 @@ namespace NectarWeb
 {
   public class Startup
   {
-    // Test commit
     public Startup(IConfiguration configuration)
     {
       Configuration = configuration;

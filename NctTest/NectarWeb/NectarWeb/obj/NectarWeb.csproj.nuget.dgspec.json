@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\francois\\source\\repos\\NectarWeb\\NectarWeb\\NectarWeb.csproj": {}
+    "C:\\Users\\francois\\Documents\\Nectar\\Nectar\\NctTest\\NectarWeb\\NectarWeb\\NectarWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\francois\\source\\repos\\NectarWeb\\NectarWeb\\NectarWeb.csproj": {
+    "C:\\Users\\francois\\Documents\\Nectar\\Nectar\\NctTest\\NectarWeb\\NectarWeb\\NectarWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\francois\\source\\repos\\NectarWeb\\NectarWeb\\NectarWeb.csproj",
+        "projectUniqueName": "C:\\Users\\francois\\Documents\\Nectar\\Nectar\\NctTest\\NectarWeb\\NectarWeb\\NectarWeb.csproj",
         "projectName": "NectarWeb",
-        "projectPath": "C:\\Users\\francois\\source\\repos\\NectarWeb\\NectarWeb\\NectarWeb.csproj",
+        "projectPath": "C:\\Users\\francois\\Documents\\Nectar\\Nectar\\NctTest\\NectarWeb\\NectarWeb\\NectarWeb.csproj",
         "packagesPath": "C:\\Users\\francois\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\francois\\source\\repos\\NectarWeb\\NectarWeb\\obj\\",
+        "outputPath": "C:\\Users\\francois\\Documents\\Nectar\\Nectar\\NctTest\\NectarWeb\\NectarWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

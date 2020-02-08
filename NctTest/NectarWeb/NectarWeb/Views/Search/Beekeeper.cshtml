@@ -1,32 +1,68 @@
 ﻿@using NectarWeb.Models.ViewModels
 @model SearchBeekeeperView
 @{
-    ViewData["Title"] = "View";
+  ViewData["Title"] = "View";
 }
 <link rel="stylesheet" href="~/css/pages/Search.css?id=1" />
+<link rel="stylesheet" href="~/css/tools/image-overlay-opacity.css?id=2" />
 
-<div class="center-block-text">
-  <h3>
-    Un essaim d'abeilles s'est chez installé chez vous ? Ne vous affolez pas, n'appeler non plus pas les pompiers, ils n'interviennent plus pour retirer les essaims. Remplissez le formulaire, et contactez un de nos apiculteurs, ils se feront un grand plaisir de répondre présents.
-  </h3>
+<div class="background-bgform">
+  <div class="center-block-text">
+    <h3>
+      Un essaim d'abeilles s'est installé chez vous ?
+    </h3>
+    <br /><br />
+    <h4 style="font-weight:normal!important;">
+      Ne vous affolez pas, n'appelez pas non plus les pompiers, ils n'interviennent plus pour retirer les essaims.
+    </h4>
+    <br />
+    <h4 style="font-weight:normal!important;">
+      Remplissez le formulaire, et contactez un de nos apiculteurs, ils se feront un grand plaisir de répondre présents.
+    </h4>
+    <br />
+    <br />
+  </div>
+  <form asp-controller="Search" asp-action="SaveBeesavior" class="form-center" method="post">
+    <div class="form-group">
+      <label>Avez-vous identifié l'essaim ?</label>
+      <div class="row">
+        <div class="ioo-container">
+          <img class="resize-swarm ioo-image" src="~/img/beeswarm.png" alt="Avatar" />
+          <div class="ioo-middle">
+            <div class="ioo-text">Abeilles</div>
+          </div>
+        </div>
+
+        <div class="ioo-container padding-img">
+          <img class="resize-swarm ioo-image" src="~/img/vasp swarm.png" alt="Avatar" />
+          <div class="ioo-middle">
+            <div class="ioo-text">Guêpes</div>
+          </div>
+        </div>
+
+        <div class="ioo-container">
+          <img class="resize-swarm ioo-image" src="~/img/hornet swarm.png" alt="Avatar" />
+          <div class="ioo-middle">
+            <div class="ioo-text">Frelons</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      @Html.LabelFor(model => model.PhoneNumber)
+      @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control" })
+      @Html.ValidationMessageFor(model => model.PhoneNumber)
+    </div>
+    <div class="form-group">
+      @Html.LabelFor(model => model.Email)
+      @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+      @Html.ValidationMessageFor(model => model.Email)
+    </div>
+    <div class="col-sm-4">
+      <button type="submit" class="form-control">Valider</button>
+    </div>
+
+  </form>
+
+
 </div>
-<form asp-controller="Search" asp-action="SaveBeesavior" class="form-center" method="post">
-  <div class="form-group">
-
-  </div>
-  <div class="form-group">
-    @Html.LabelFor(model => model.PhoneNumber)
-    @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control" })
-    @Html.ValidationMessageFor(model => model.PhoneNumber)
-  </div>
-  <div class="form-group">
-    @Html.LabelFor(model => model.Email)
-    @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
-    @Html.ValidationMessageFor(model => model.Email)
-  </div>
-  <div class="col-sm-4">
-    <button type="submit" class="form-control">Valider</button>
-  </div>
-  
-</form>
-
