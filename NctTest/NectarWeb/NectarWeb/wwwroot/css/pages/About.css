@@ -1,21 +1,28 @@
-﻿.about-div-center {
-    background-image: url(/img/animal-bee.png) !important;
+﻿.about-div-contact {
+    background-image: url(/img/ContactsUs-Honey.png) !important;
+    height: 1440px !important;
     text-align: center !important;
-    margin: 0 5% 0 5% !important;
-    margin-bottom: 60px !important;
-    font-family: Arial, Helvetica, sans-serif !important;
-    position: absolute !important;
-    width: 100% !important;
-    height: 1000px !important;
-    background-size: contain !important;
     background-repeat: no-repeat !important;
+    background-size: 100% auto !important;
+    background-position: 0% 0% !important;
+    font-family: Arial, Helvetica, sans-serif !important;
     position: relative !important;
+
+    background-color: #db9044 !important;
 }
 
-.about-p {
-    font-family: Arial, Helvetica, sans-serif !important;
-    margin: 0 25% 0 25% !important;
-    text-justify: auto !important;
+.about-table {
+    width: 100% !important;
+    align-content: center !important;
     position: relative !important;
-    text-align: left !important;
+    border-bottom-color: black !important;
+    border-top-color: black !important;
+    border-left-color: black !important;
+    border-right-color: black !important;
+    text-align: center !important;
+    border: solid !important;
+}
+
+table, th, td {
+    border: 1px solid black;
 }

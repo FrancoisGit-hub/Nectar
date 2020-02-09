@@ -237,3 +237,4 @@ C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NectarWeb\NectarWeb\obj
 C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\NectarWeb.pdb
 C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\Razor\Views\Home\ContactUs.cshtml.g.cs
 C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\Razor\Views\About\About.cshtml.g.cs
+C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\Razor\Views\CGU\CGU.cshtml.g.cs
