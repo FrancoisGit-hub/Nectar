@@ -236,3 +236,4 @@ C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\obj\Debug\
 C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\NectarWeb.csproj.CopyComplete
 C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\NectarWeb.dll
 C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\NectarWeb.pdb
+C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\Razor\Views\Beekeeper\Index.cshtml.g.cs
