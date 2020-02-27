@@ -11,6 +11,26 @@
       "jQuery/1.9.1": {
         "type": "package"
       },
+      "LigerShark.WebOptimizer.Core/3.0.250": {
+        "type": "package",
+        "dependencies": {
+          "NUglify": "1.5.13",
+          "System.Text.Json": "4.6.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/WebOptimizer.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/WebOptimizer.Core.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
+        "build": {
+          "build/LigerShark.WebOptimizer.Core.props": {},
+          "build/LigerShark.WebOptimizer.Core.targets": {}
+        }
+      },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -616,6 +636,15 @@
         },
         "runtime": {
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
+        }
+      },
+      "NUglify/1.5.13": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NUglify.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NUglify.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -1796,6 +1825,15 @@
           "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
         }
       },
+      "System.Text.Json/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {}
+        }
+      },
       "System.Text.RegularExpressions/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1900,6 +1938,9 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "vue/2.6.11": {
+        "type": "package"
       }
     }
   },
@@ -1964,6 +2005,21 @@
         "Tools/uninstall.ps1",
         "jquery.1.9.1.nupkg.sha512",
         "jquery.nuspec"
+      ]
+    },
+    "LigerShark.WebOptimizer.Core/3.0.250": {
+      "sha512": "CEjCOj5AwKSd/h5E4mCN9FvDKP1kw1oVBi9TmCOiqPzGrJO2Z8+7bjNWuLrFo30ZcuJjJjKYgQA422Jrz1Uf9g==",
+      "type": "package",
+      "path": "ligershark.weboptimizer.core/3.0.250",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/LigerShark.WebOptimizer.Core.props",
+        "build/LigerShark.WebOptimizer.Core.targets",
+        "lib/netcoreapp3.0/WebOptimizer.Core.dll",
+        "lib/netcoreapp3.0/WebOptimizer.Core.xml",
+        "ligershark.weboptimizer.core.3.0.250.nupkg.sha512",
+        "ligershark.weboptimizer.core.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
@@ -2911,6 +2967,25 @@
         "lib/netstandard1.6/NuGet.Frameworks.xml",
         "nuget.frameworks.4.7.0.nupkg.sha512",
         "nuget.frameworks.nuspec"
+      ]
+    },
+    "NUglify/1.5.13": {
+      "sha512": "EgvMq0u3PEeKv6uypBvau999iNSOSYdayZcxsgS9TBWIqs63WIWI/syl7cOs82J54xJnS3STpKZAW4SZElGIqg==",
+      "type": "package",
+      "path": "nuglify/1.5.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/NUglify.dll",
+        "lib/net35/NUglify.xml",
+        "lib/net40/NUglify.dll",
+        "lib/net40/NUglify.xml",
+        "lib/netstandard1.3/NUglify.dll",
+        "lib/netstandard1.3/NUglify.xml",
+        "lib/netstandard2.0/NUglify.dll",
+        "lib/netstandard2.0/NUglify.xml",
+        "nuglify.1.5.13.nupkg.sha512",
+        "nuglify.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -5878,6 +5953,27 @@
         "version.txt"
       ]
     },
+    "System.Text.Json/4.6.0": {
+      "sha512": "4F8Xe+JIkVoDJ8hDAZ7HqLkjctN/6WItJIzQaifBwClC7wmoLSda/Sv2i6i1kycqDb3hWF4JCVbpAweyOKHEUA==",
+      "type": "package",
+      "path": "system.text.json/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Text.Json.dll",
+        "lib/net461/System.Text.Json.xml",
+        "lib/netcoreapp3.0/System.Text.Json.dll",
+        "lib/netcoreapp3.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.4.6.0.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Text.RegularExpressions/4.3.0": {
       "sha512": "RpT2DA+L660cBt1FssIE9CAGpLFdFPuheB7pLpKpn6ZXNby7jDERe8Ua/Ne2xGiwLVG2JOqziiaVCGDon5sKFA==",
       "type": "package",
@@ -6332,13 +6428,30 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "vue/2.6.11": {
+      "sha512": "QvC2UH8Eaz/aEc6+bf1WpdtZl8iAToPuPxI2To6yDfOyqcTL4fvAlpNix1TXzSVQhPcABmbDcDt49uq/HcNmOQ==",
+      "type": "package",
+      "path": "vue/2.6.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/vue.js",
+        "Content/Scripts/vue.min.js",
+        "images/icon.png",
+        "license/LICENSE.txt",
+        "vue.2.6.11.nupkg.sha512",
+        "vue.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "LigerShark.WebOptimizer.Core >= 3.0.250",
       "Microsoft.Extensions.Logging.Debug >= 3.1.1",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.1",
-      "bootstrap >= 3.4.1"
+      "bootstrap >= 3.4.1",
+      "vue >= 2.6.11"
     ]
   },
   "packageFolders": {
@@ -6382,6 +6495,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "LigerShark.WebOptimizer.Core": {
+            "target": "Package",
+            "version": "[3.0.250, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[3.1.1, )"
@@ -6393,6 +6510,10 @@
           "bootstrap": {
             "target": "Package",
             "version": "[3.4.1, )"
+          },
+          "vue": {
+            "target": "Package",
+            "version": "[2.6.11, )"
           }
         },
         "imports": [
@@ -6413,7 +6534,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

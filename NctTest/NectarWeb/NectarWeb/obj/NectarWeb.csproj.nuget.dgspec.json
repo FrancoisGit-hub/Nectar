@@ -41,6 +41,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "LigerShark.WebOptimizer.Core": {
+              "target": "Package",
+              "version": "[3.0.250, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[3.1.1, )"
@@ -49,9 +53,17 @@
               "target": "Package",
               "version": "[3.1.1, )"
             },
+            "aspdotnet-vuejs": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "bootstrap": {
               "target": "Package",
               "version": "[3.4.1, )"
+            },
+            "vue": {
+              "target": "Package",
+              "version": "[2.6.11, )"
             }
           },
           "imports": [
@@ -72,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

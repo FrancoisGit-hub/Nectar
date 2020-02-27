@@ -13,5 +13,11 @@ namespace NectarWeb.Controllers
     {
       return View();
     }
+
+    [Route("Apiculteur/Inscription")]
+    public IActionResult Subscription()
+    {
+      return View();
+    }
   }
 }
