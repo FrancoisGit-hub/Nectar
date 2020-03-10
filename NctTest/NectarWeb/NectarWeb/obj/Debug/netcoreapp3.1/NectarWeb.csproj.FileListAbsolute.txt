@@ -214,7 +214,6 @@ C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NectarWeb\NectarWeb\bin
 C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\NectarWeb.csprojAssemblyReference.cache
 C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\staticwebassets\NectarWeb.StaticWebAssets.Manifest.cache
 C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\staticwebassets\NectarWeb.StaticWebAssets.xml
-C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\NectarWeb.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\NectarWeb.RazorAssemblyInfo.cache
 C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\NectarWeb.RazorAssemblyInfo.cs
 C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\NectarWeb.AssemblyInfoInputs.cache

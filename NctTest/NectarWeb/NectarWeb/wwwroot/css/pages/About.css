@@ -1,28 +1,46 @@
 ﻿.about-div-contact {
-    background-image: url(/img/ContactsUs-Honey.png) !important;
-    height: 1440px !important;
-    text-align: center !important;
-    background-repeat: no-repeat !important;
-    background-size: 100% auto !important;
-    background-position: 0% 0% !important;
-    font-family: Arial, Helvetica, sans-serif !important;
-    position: relative !important;
-
-    background-color: #db9044 !important;
+    background-image: url(/img/ContactsUs-Honey.png);
+    height: 1440px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 0% 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    background-color: #db9044;
 }
 
 .about-table {
-    width: 100% !important;
-    align-content: center !important;
-    position: relative !important;
-    border-bottom-color: black !important;
-    border-top-color: black !important;
-    border-left-color: black !important;
-    border-right-color: black !important;
-    text-align: center !important;
-    border: solid !important;
+    align-content: center;
+    position: relative;
+    border-bottom-color: aquamarine;
+    border-top-color: aqua;
+    border-left-color: black;
+    border-right-color: black;
+    text-align: center;
+    border: solid;
 }
 
 table, th, td {
-    border: 1px solid black;
+    width: 100%;
+    border: 1px solid aqua;
+}
+
+.about-tr {
+    width: 30%;
+}
+
+.about-tr-left {
+    width: inherit;
+    margin-left: 30% !important;
+}
+
+.about-tr-center {
+    width: inherit;
+    margin-left: 30% !important;
+}
+
+.about-tr-right {
+    width: inherit;
+    margin-left: 30% !important;
 }
