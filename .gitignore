@@ -23,6 +23,66 @@
 *.dll.config
 *.cache
 *.suo
+# use glob syntax
+syntax: glob
+
+*.obj
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.scc
+*.dll
+[Bb]in
+[Dd]ebug*/
+obj/
+[Rr]elease*/
+ReSharper*/
+*/*/*/[Bb]in
+*/*/*/[Dd]ebug*/
+*/*/*/obj/
+*/*/*/[Rr]elease*/
+*/*/*/ReSharper*/
+[Tt]est[Rr]esult*
+[Bb]uild[Ll]og.*
+*/*/*/*.[Pp]ublish.xml
+*/*/*/*.resharper
+*/*/*/[Ll]ogs/
+*.vs10x
+*.sln.docstates
+*.build.csdef
+*.svclog
+*.orig
+*.nupkg
+.vs
+*.Transformed.cscfg
+*.Transformed.csdef
+*.Transformed.build.cscfg
+UpgradeLog*.htm
+*.TestResults.xml
+UnitTests.TestResults.html
+AcceptanceTestsResults.xml
+*/*/*/local.settings.json
+*/*/*/app[Ss]ettings.json
+*/*/*/appsettings.json
+
+# Node #
+node_modules/
+
 # Include dlls if they’re in the NuGet packages directory
 !/packages/*/lib/*.dll
 # Include dlls if they're in the CommonReferences directory
