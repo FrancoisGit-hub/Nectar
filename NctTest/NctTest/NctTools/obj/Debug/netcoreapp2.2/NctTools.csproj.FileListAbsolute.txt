@@ -7,14 +7,3 @@ C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctToo
 C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctTools\obj\Debug\netcoreapp2.2\NctTools.AssemblyInfo.cs
 C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctTools\obj\Debug\netcoreapp2.2\NctTools.dll
 C:\Users\fgittenait.GLOBDOM\Documents\Visual Studio 2017\Projects\NctTest\NctTools\obj\Debug\netcoreapp2.2\NctTools.pdb
-<<<<<<< origin/master
-=======
-C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NctTest\NctTools\bin\Debug\netcoreapp2.2\NctTools.deps.json
-C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NctTest\NctTools\bin\Debug\netcoreapp2.2\NctTools.dll
-C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NctTest\NctTools\bin\Debug\netcoreapp2.2\NctTools.pdb
-C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NctTest\NctTools\obj\Debug\netcoreapp2.2\NctTools.AssemblyInfoInputs.cache
-C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NctTest\NctTools\obj\Debug\netcoreapp2.2\NctTools.AssemblyInfo.cs
-C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NctTest\NctTools\obj\Debug\netcoreapp2.2\NctTools.dll
-C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NctTest\NctTools\obj\Debug\netcoreapp2.2\NctTools.pdb
-C:\Users\chris\Documents\Git\NectarWeb\NectarWeb\NctTest\NctTest\NctTools\obj\Debug\netcoreapp2.2\NctTools.csprojAssemblyReference.cache
->>>>>>> local

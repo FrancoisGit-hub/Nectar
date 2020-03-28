@@ -3,14 +3,15 @@
 ################################################################################
 
 /NctTest/NctTest/.vs/NctTest/v16/Server/sqlite3/db.lock
-/NctTest/NectarWeb/.vs/NectarWeb/v16/.suo
 /NctTest/NectarWeb/.vs/NectarWeb/DesignTimeBuild/.dtbcache
-/NctTest/NectarWeb/.vs/NectarWeb/v16/Server/sqlite3/storage.ide
-/NctTest/NectarWeb/.vs/NectarWeb/v16/Server/sqlite3/storage.ide
-/NctTest/NectarWeb/.vs/NectarWeb/v16/Server/sqlite3/storage.ide
+/NctTest/NectarWeb/.vs/NectarWeb/v16/Server/sqlite3/storage.ide-shm
 /NctTest/NectarWeb/.vs/NectarWeb/v16/Server/sqlite3/storage.ide-wal
+/NctTest/NectarWeb/.vs/NectarWeb/v16/.suo
 /NctTest/NectarWeb/.vs/NectarWeb/v16/.suo.orig
-/NctTest/NectarWeb/NectarWeb/obj/Debug/netcoreapp3.1/NectarWeb.csprojAssemblyReference.cache
+/NctTest/NectarWeb/NectarWeb/obj/Debug/netcoreapp3.1/NectarWeb.csproj.FileListAbsolute.txt.orig
+/NctTest/NectarWeb/.vs/NectarWeb/v16/.suo
+/NctTest/NectarWeb/.vs/NectarWeb/v16/Server/sqlite3/storage.ide
+/NctTest/NectarWeb/.vs/NectarWeb/v16/Server/sqlite3/storage.ide-shm
 
 ###################
 # compiled source #
@@ -23,66 +24,6 @@
 *.dll.config
 *.cache
 *.suo
-# use glob syntax
-syntax: glob
-
-*.obj
-*.pdb
-*.user
-*.aps
-*.pch
-*.vspscc
-*.vssscc
-*_i.c
-*_p.c
-*.ncb
-*.suo
-*.tlb
-*.tlh
-*.bak
-*.cache
-*.ilk
-*.log
-*.lib
-*.sbr
-*.scc
-*.dll
-[Bb]in
-[Dd]ebug*/
-obj/
-[Rr]elease*/
-ReSharper*/
-*/*/*/[Bb]in
-*/*/*/[Dd]ebug*/
-*/*/*/obj/
-*/*/*/[Rr]elease*/
-*/*/*/ReSharper*/
-[Tt]est[Rr]esult*
-[Bb]uild[Ll]og.*
-*/*/*/*.[Pp]ublish.xml
-*/*/*/*.resharper
-*/*/*/[Ll]ogs/
-*.vs10x
-*.sln.docstates
-*.build.csdef
-*.svclog
-*.orig
-*.nupkg
-.vs
-*.Transformed.cscfg
-*.Transformed.csdef
-*.Transformed.build.cscfg
-UpgradeLog*.htm
-*.TestResults.xml
-UnitTests.TestResults.html
-AcceptanceTestsResults.xml
-*/*/*/local.settings.json
-*/*/*/app[Ss]ettings.json
-*/*/*/appsettings.json
-
-# Node #
-node_modules/
-
 # Include dlls if they’re in the NuGet packages directory
 !/packages/*/lib/*.dll
 # Include dlls if they're in the CommonReferences directory
@@ -332,3 +273,4 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+ No newline at end of file
