@@ -241,3 +241,4 @@ C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\bin\Debug\
 C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\NectarWeb.csprojAssemblyReference.cache
 C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\NectarWeb.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\NectarWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\Razor\Views\Search\BeekeeperResults.cshtml.g.cs

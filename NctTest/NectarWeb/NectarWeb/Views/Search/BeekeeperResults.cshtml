@@ -1,0 +1,99 @@
+﻿@model IEnumerable<NectarWeb.Models.Beekeeper>
+
+@{
+  ViewData["Title"] = "BeekeperResults";
+}
+
+<div class="jumbotron text-center">
+  <h1 class="display-3">Merci de faire confiance à Nectar</h1>
+  <p class="lead"><strong>Veuillez consulter vos e-mails.</strong> Voici la liste des 5 apiculteurs les plus proches :</p>
+  <hr>
+  <div style="text-align:center;">
+    @foreach (var item in Model)
+    {
+      var id = item.Id;
+      <div style="border-width: 2px; border-radius: 4px; border-style:solid; width:50%; margin-left: auto; margin-right: auto;">
+        <h3>@item.FirstName @item.LastName</h3>
+        <p>
+          @item.ZipCode - @item.City
+          <br />
+          <input type="button" onclick="document.getElementById('div-contact-@id').style.display = 'block'; this.style.display = 'none';" value="Voir le contact" class="btn btn-primary" />
+          <div style="display: none;" id="div-contact-@id">
+            @foreach (var tel in item.Phone)
+            {
+              <a href="tel:@tel">@tel</a>
+              <br />
+            }
+            <a href="mailto: @item.Email">@item.Email</a>
+          </div>
+        </p>
+      </div>
+      <br />
+    }
+  </div>
+  @*Having trouble? <a href="">Contact us</a>*@
+  @*<p class="lead">
+    <a class="btn btn-primary btn-sm" href="https://bootstrapcreative.com/" role="button">Continuer sur notre blog</a>
+  </p>*@
+</div>
+
+
+
+
+@*<p>
+      <a asp-action="Create">Create New</a>
+  </p>
+  <table class="table">
+      <thead>
+          <tr>
+              <th>
+                  @Html.DisplayNameFor(model => model.Id)
+              </th>
+              <th>
+                  @Html.DisplayNameFor(model => model.FirstName)
+              </th>
+              <th>
+                  @Html.DisplayNameFor(model => model.LastName)
+              </th>
+              <th>
+                  @Html.DisplayNameFor(model => model.Email)
+              </th>
+              <th>
+                  @Html.DisplayNameFor(model => model.ZipCode)
+              </th>
+              <th>
+                  @Html.DisplayNameFor(model => model.City)
+              </th>
+              <th></th>
+          </tr>
+      </thead>
+      <tbody>
+  @foreach (var item in Model) {
+          <tr>
+              <td>
+                  @Html.DisplayFor(modelItem => item.Id)
+              </td>
+              <td>
+                  @Html.DisplayFor(modelItem => item.FirstName)
+              </td>
+              <td>
+                  @Html.DisplayFor(modelItem => item.LastName)
+              </td>
+              <td>
+                  @Html.DisplayFor(modelItem => item.Email)
+              </td>
+              <td>
+                  @Html.DisplayFor(modelItem => item.ZipCode)
+              </td>
+              <td>
+                  @Html.DisplayFor(modelItem => item.City)
+              </td>
+              <td>
+                  @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                  @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                  @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+              </td>
+          </tr>
+  }
+      </tbody>
+  </table>*@

@@ -274,3 +274,8 @@ FakesAssemblies/
 # Visual Studio 6 workspace options file
 *.opt
  No newline at end of file
+/NctTest/NectarWeb/NectarWeb/bin/Debug/netcoreapp3.1/NectarWeb.dll
+/NctTest/NectarWeb/NectarWeb/bin/Debug/netcoreapp3.1/NectarWeb.dll
+/NctTest/NectarWeb/NectarWeb/bin/Debug/netcoreapp3.1/NectarWeb.pdb
+/NctTest/NectarWeb/NectarWeb/bin/Debug/netcoreapp3.1/NectarWeb.Views.dll
+/NctTest/NectarWeb/NectarWeb/bin/Debug/netcoreapp3.1/NectarWeb.Views.pdb

@@ -22,7 +22,7 @@
     <br />
     <br />
   </div>
-  <form asp-controller="Search" asp-action="SaveBeesavior" class="form-center" method="post">
+  <form asp-controller="Search" asp-action="BeekeeperResults" class="form-center" method="post">
     <div class="form-group">
       <label>Avez-vous identifié l'essaim ?</label>
       <div class="row">
@@ -59,7 +59,7 @@
       @Html.ValidationMessageFor(model => model.Email)
     </div>
     <div class="col-sm-4">
-      <button type="submit" class="form-control" style="padding-bottom: 50px;">Valider</button>
+      <button type="submit" class="form-control" style="padding-bottom: 50px;" onclick="window.location.href='Contacter/Apiculteur-resultats/75018'">Valider</button>
       <input type="checkbox" />&nbsp;Valider les <a href="/About/CGU">CGU</a>
     </div>
 
