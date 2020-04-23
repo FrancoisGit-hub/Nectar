@@ -3,29 +3,30 @@ using System.ComponentModel.DataAnnotations;
 
 namespace NectarWeb.Models.ViewModels
 {
-  public class SearchBeekeeperView
+  public class BeekeeperSubscriptionView
   {
-    [Display(Name = "Avez-vous identifié un essaim ?")]
-    public SwarmType SwarmType { get; set; }
+    [Display(Name = "Nom")]
+    [Required(ErrorMessage = "Le nom est obligatoire")]
+    public string LastName { get; set; }
 
-    [Display(Name ="Dans quelle commune se situe l'essaim ? (code postal)")]
+    [Display(Name = "Prénom")]
+    [Required(ErrorMessage = "Le prénom est obligatoire")]
+    public string FirstName { get; set; }
+
+    [Display(Name = "Code postal")]
     //[RegularExpression("/^(?:[0-8]\\d|9[0-8])\\d{3}$/", ErrorMessage = "Veuillez rentrer un code postal valide")]
     [StringLength(5, ErrorMessage = "Veuillez rentrer un code postal")]
     [Required(ErrorMessage = "Le code postal est obligatoire")]
     public string PostalCode { get; set; }
 
-    [Display(Name ="Quel est votre numéro de téléphone ?")]
+    [Display(Name = "Téléphone")]
     [RegularExpression("^(?!0+$)(\\+\\d{1,3}[- ]?)?(?!0+$)\\d{10,15}$", ErrorMessage = "Veuillez rentrer un numéro de téléphone valide")]
     [Required(ErrorMessage = "Le numéro de téléphone est obligatoire")]
     public string PhoneNumber { get; set; }
 
-    [Display(Name ="Quelle est votre adresse mail ?")]
+    [Display(Name = "Email")]
     [EmailAddress(ErrorMessage = "Veuillez rentrer une adresse e-mail valide")]
     [Required(ErrorMessage = "L'e-mail est obligatoire")]
     public string Email { get; set; }
-
-    [Required(ErrorMessage = "Vous devez accepter les termes")]
-    [Display(Name = "Valider les ")]
-    public bool ApproveCGU { get; set; }
   }
 }

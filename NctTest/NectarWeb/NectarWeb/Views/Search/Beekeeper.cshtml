@@ -3,8 +3,10 @@
 @{
   ViewData["Title"] = "View";
 }
+<link rel="stylesheet" href="~/css/tools/FormValidation.css?id=2" />
 <link rel="stylesheet" href="~/css/pages/Search.css?id=1" />
 <link rel="stylesheet" href="~/css/tools/image-overlay-opacity.css?id=2" />
+<script src="~/js/pages/Beekeeper.js?id=2"></script>
 
 <div class="background-bgform">
   <div class="center-block-text">
@@ -26,21 +28,21 @@
     <div class="form-group">
       <label>Avez-vous identifié l'essaim ?</label>
       <div class="row">
-        <div class="ioo-container">
+        <div class="ioo-container" onclick="selectSwarm(this);">
           <img class="resize-swarm ioo-image" src="~/img/beeswarm.png" alt="Abeilles" />
           <div class="ioo-middle">
             <div class="ioo-text">Abeilles</div>
           </div>
         </div>
 
-        <div class="ioo-container padding-img">
+        <div class="ioo-container padding-img" onclick="selectSwarm(this);">
           <img class="resize-swarm ioo-image" src="~/img/vasp swarm.png" alt="Guêpes" />
           <div class="ioo-middle">
             <div class="ioo-text">Guêpes</div>
           </div>
         </div>
 
-        <div class="ioo-container">
+        <div class="ioo-container" onclick="selectSwarm(this);">
           <img class="resize-swarm ioo-image" src="~/img/hornet swarm.png" alt="Frelons" />
           <div class="ioo-middle">
             <div class="ioo-text">Frelons</div>
@@ -49,18 +51,23 @@
       </div>
     </div>
     <div class="form-group">
+      @Html.LabelFor(model => model.PostalCode)
+      @Html.TextBoxFor(model => model.PostalCode, new { @class = "form-control" })
+      @Html.ValidationMessageFor(model => model.PostalCode, "", new { @class = "errorMessage" })
+    </div>
+    <div class="form-group">
       @Html.LabelFor(model => model.PhoneNumber)
       @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control" })
-      @Html.ValidationMessageFor(model => model.PhoneNumber)
+      @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "errorMessage" })
     </div>
     <div class="form-group">
       @Html.LabelFor(model => model.Email)
       @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
-      @Html.ValidationMessageFor(model => model.Email)
+      @Html.ValidationMessageFor(model => model.Email, "", new { @class = "errorMessage" })
     </div>
     <div class="col-sm-4">
-      <button type="submit" class="form-control" style="padding-bottom: 50px;" onclick="window.location.href='Contacter/Apiculteur-resultats/75018'">Valider</button>
-      <input type="checkbox" />&nbsp;Valider les <a href="/About/CGU">CGU</a>
+      <input type="checkbox" />&nbsp;Valider les <a href="/About/CGU">CGU</a><br />
+      <input type="submit" class="form-control" value="Valider" />
     </div>
 
   </form>

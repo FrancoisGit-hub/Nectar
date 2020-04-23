@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using NectarWeb.DAL;
 using NectarWeb.Models;
 
 namespace NectarWeb.Controllers
@@ -16,9 +17,20 @@ namespace NectarWeb.Controllers
     }
 
 
-    [Route("Contacter/Apiculteur-resultats/{zipCode?}")]
-    public IActionResult BeekeeperResults(string zipCode)
+    [Route("Contacter/Apiculteur-resultats/")]
+    public IActionResult BeekeeperResults(Models.ViewModels.SearchBeekeeperView model)
     {
+      if (!ModelState.IsValid)
+      {
+        return View("Beekeeper", model);
+      }
+
+
+      using (var dal = new NectarDAL())
+      {
+        return View(dal.GetBeekeepersByPostalCode(model.PostalCode));
+      }
+      /*
       List<Beekeeper> results = new List<Beekeeper>();
       results.Add(new Beekeeper()
       {
@@ -63,6 +75,7 @@ namespace NectarWeb.Controllers
       });
 
       return View(results);
+      */
     }
   }
 }

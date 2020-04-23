@@ -4,7 +4,7 @@
 .background-home {
   background-image: url(/img/animal-bee.png);
   width: 100%;
-  height: 885px;
+  height: 1200px;
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #fae3c7;
@@ -28,6 +28,8 @@
   font-size: 100px;
   font-weight: bold;
   color: #3b3a3aff!important;
+  line-height: 0.8;
+  width: 100%;
 }
 
 .prevention-home {

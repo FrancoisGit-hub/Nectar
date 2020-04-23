@@ -239,6 +239,13 @@ C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\obj\Debug\
 C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\bin\Debug\netcoreapp3.1\WebOptimizer.Core.dll
 C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\bin\Debug\netcoreapp3.1\NUglify.dll
 C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\NectarWeb.csprojAssemblyReference.cache
+C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\Razor\Views\Search\BeekeeperResults.cshtml.g.cs
 C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\NectarWeb.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\NectarWeb.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\Razor\Views\Search\BeekeeperResults.cshtml.g.cs
+C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\Razor\Views\Beekeeper\ValidateSubscription.cshtml.g.cs

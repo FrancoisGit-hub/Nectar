@@ -71,7 +71,7 @@ body {
 }
 
 .navbar-items {
-  margin-left: 75%;
+  margin-left: 90%;
 }
 
 .table-full {
@@ -89,4 +89,20 @@ body {
 .center-block-text {
   text-align: center;
   margin: 0 20% 0 20%;
+}
+
+#askBeekeeper:hover{
+  cursor: pointer;
+}
+
+#beekeeperPage:hover {
+  cursor: pointer;
+}
+
+#blog:hover {
+  cursor: pointer;
+}
+
+#contactUs:hover {
+  cursor: pointer;
 }
