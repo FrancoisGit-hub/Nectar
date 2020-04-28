@@ -116,6 +116,11 @@ body {
   background-color: black;
 }
 
+.mb-0 {
+  font-family: Avenir;
+  text-align: justify;
+}
+
 .mb-3 {
   margin-bottom: 0px!important;
 }
@@ -195,6 +200,62 @@ li.nav-item {
   margin: 0 20px 0 0;
 }
 
+.prev-img-1 {
+  background: url('/img/unnamed1-dark.png') no-repeat center center;
+  background-size: contain;
+  height: 150px;
+  margin-bottom: 19px;
+}
+
+  .prev-img-1:hover {
+    background: url('/img/unnamed1.png') no-repeat center center;
+    background-size: contain;
+    height: 150px;
+    margin-bottom: 19px;
+  }
+
+.prev-img-2 {
+  background: url('/img/unnamed2-dark.png') no-repeat center center;
+  background-size: contain;
+  height: 150px;
+  margin-bottom: 18px;
+}
+
+  .prev-img-2:hover {
+    background: url('/img/unnamed2.png') no-repeat center center;
+    background-size: contain;
+    height: 150px;
+    margin-bottom: 18px;
+  }
+
+.prev-img-3 {
+  background: url('/img/unnamed3-dark.png') no-repeat center center;
+  background-size: contain;
+  height: 158px;
+  margin-bottom: 10px;
+}
+
+  .prev-img-3:hover {
+    background: url('/img/unnamed3.png') no-repeat center center;
+    background-size: contain;
+    height: 158px;
+    margin-bottom: 10px;
+  }
+
+.prev-img-4 {
+  background: url('/img/unnamed4-dark.png') no-repeat center center;
+  background-size: contain;
+  height: 162px;
+  margin-bottom: 6px;
+}
+
+  .prev-img-4:hover {
+    background: url('/img/unnamed4.png') no-repeat center center;
+    background-size: contain;
+    height: 162px;
+    margin-bottom: 6px;
+  }
+
 header {
   width: 100%;
   height: 85vh;
@@ -242,6 +303,11 @@ header {
   font-family: Avenir;
 }
 
+.benefits-text {
+  color: #1F1F1F;
+  font-family: Avenir;
+}
+
 
 .btn-explore {
   display: inline-block;
@@ -283,11 +349,12 @@ header {
 /***overview***/
 .overview-wrap .title-overview {
   text-align: center;
-  color: #3dce8c;
+  color: #582E13;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 64px;
   margin-bottom: 23px;
+  font-family: Coolvetica;
 }
 
 .overview-wrap .subtitle-overview {
@@ -320,7 +387,7 @@ header {
   position: absolute;
   left: 0;
   top: 0;
-  border-width: 35vh 100vw 0 0;
+  border-width: 20vh 100vw 0 0;
   border-style: solid;
   border-color: #ffffff transparent transparent transparent;
 }
@@ -361,16 +428,17 @@ header {
 
 /***overview***/
 .overview-box {
-  height: 340px;
+  height: 400px;
   width: 100%;
   text-align: center;
   padding: 35px 20px;
+  font-family: Coolvetica;
 }
 
-  .overview-box:hover {
+  /*.overview-box:hover {
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
     transition: all ease 1s;
-  }
+  }*/
 
   .overview-box h5 {
     font-weight: 700;
@@ -382,7 +450,7 @@ header {
   }
 
   .overview-box p {
-    font-size: 14px;
+    font-size: 18px;
     color: #666666;
   }
 
@@ -415,14 +483,16 @@ header {
   transition: all ease 1s;
 }
 
-
-
+.carousel-section {
+  background-color: #E8EDF3;
+  text-align: center;
+}
 
 /***gallery***/
 
 .galeria {
   width: 100%;
-  height: 500px;
+  height: 400px;
   overflow: hidden;
   display: flex;
   position: relative;
@@ -430,9 +500,10 @@ header {
 
 .imagenes {
   width: 100%;
-  height: 500px;
+  height: 100%;
   overflow: hidden;
   position: relative;
+  background-color: #E8EDF3;
 }
 
   .imagenes img {
@@ -447,7 +518,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(52, 73, 94, 0.815);
+  /*background: rgba(52, 73, 94, 0.815);*/
 }
 
   .enmica h2 {
@@ -767,10 +838,11 @@ input.btn-login {
 /* Footer */
 footer.footer {
   padding: 4rem 0;
+  background-color: #F9EDB8;
 }
 
   footer.footer ul li a {
-    color: #ffffff;
+    color: black;
     text-decoration: none;
   }
 
@@ -1011,4 +1083,9 @@ footer.footer {
   .contact-wrap h2 {
     font-size: 25px;
   }
+}
+
+
+.home2 {
+  height: 45px;
 }

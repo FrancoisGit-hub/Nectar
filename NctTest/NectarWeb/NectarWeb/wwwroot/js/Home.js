@@ -1,4 +1,8 @@
-﻿// Carousel
+﻿$('#myCarousel').carousel({
+  interval: 3000,
+})
+
+// Carousel
 var slideIndex = 1;
 showSlides(slideIndex);
 

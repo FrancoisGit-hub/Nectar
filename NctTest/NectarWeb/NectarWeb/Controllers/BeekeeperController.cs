@@ -13,18 +13,21 @@ namespace NectarWeb.Controllers
     [Route("/Apiculteur")]
     public IActionResult Index()
     {
+      ViewBag.IsHome = false;
       return View();
     }
 
     [Route("Apiculteur/Inscription")]
     public IActionResult Subscription()
     {
+      ViewBag.IsHome = false;
       return View();
     }
 
     [Route("Beekeeper/ValidateSubscription")]
     public IActionResult ValidateSubscription(BeekeeperSubscriptionView model)
     {
+      ViewBag.IsHome = false;
       if (!ModelState.IsValid)
       {
         return View("Subscription", model);
