@@ -20,3 +20,19 @@
 .padding-img {
   padding: 0 15px;
 }
+
+.bg-overlay {
+  background: rgba(0,0,0, .7);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.background-bksearch-form {
+  min-height: 100vh;
+  background-image: url('../../img/intervention.jpg');
+  background-size: cover;
+}
