@@ -36,3 +36,22 @@
   background-image: url('../../img/intervention.jpg');
   background-size: cover;
 }
+
+.form-container {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.questions {
+  font-size: 24px;
+}
+
+.title-form {
+  font-family: Coolvetica;
+  font-size: 95px!important;
+}
+
+.subtitle-form {
+  font-family: Avenir;
+  font-size: 30px!important;
+}

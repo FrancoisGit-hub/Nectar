@@ -10,13 +10,6 @@ namespace NectarWeb.Controllers
 {
   public class BeekeeperController : Controller
   {
-    [Route("/Apiculteur")]
-    public IActionResult Index()
-    {
-      ViewBag.IsHome = false;
-      return View();
-    }
-
     [Route("Apiculteur/Inscription")]
     public IActionResult Subscription()
     {

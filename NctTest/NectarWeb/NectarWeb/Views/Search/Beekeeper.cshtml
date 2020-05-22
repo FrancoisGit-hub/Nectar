@@ -1,10 +1,11 @@
 ﻿@using NectarWeb.Models.ViewModels
 @model SearchBeekeeperView
 @{
-  ViewData["Title"] = "View";
+  ViewData["Title"] = "Recherche des apiculteurs";
 }
+<link rel="stylesheet" href="~/css/tools/MyCarousel.css?id=2" />
 <link rel="stylesheet" href="~/css/tools/FormValidation.css?id=2" />
-<link rel="stylesheet" href="~/css/pages/Search.css?id=2" />
+<link rel="stylesheet" href="~/css/pages/Search.css?id=4" />
 <link rel="stylesheet" href="~/css/tools/image-overlay-opacity.css?id=2" />
 <script src="~/js/pages/Beekeeper.js?id=2"></script>
 
@@ -13,14 +14,14 @@
 
 <section class="pt-5 pb-5 bg-dark position-relative background-bksearch-form ">
   <div class="bg-overlay"></div>
-  <div class="container pt-5 pb-5 position-relative">
+  <div class="form-container pt-5 pb-5 position-relative">
     <div class="row d-flex justify-content-between pt-lg-5 align-items-center">
-      <div class="col-xl-5 col-lg-6 col-md-7 text-center text-lg-left mb-5 mb-lg-0">
-        <h1 class="display-3 font-weight-bold text-white aos-init aos-animate" data-aos="fade-up">Un essaim d'abeilles chez vous ?</h1>
+      <div class="col-xl-6 col-lg-6 col-md-7 text-center text-lg-left mb-5 mb-lg-0">
+        <h1 class="display-3 font-weight-bold text-white aos-init aos-animate title-form" data-aos="fade-up">Un essaim d'abeilles <br /> chez vous ?</h1>
         <div class="my-4 aos-init" data-aos="fade-up">
-          <p class=" lead text-white">Remplissez le formulaire, et contactez un de nos apiculteurs, ils se feront un grand plaisir de vous répondre.</p>
+          <p class=" lead text-white subtitle-form">Remplissez le formulaire, et contactez un de nos apiculteurs, ils se feront un grand plaisir de vous répondre.</p>
         </div>
-        <div class="d-flex justify-content-center justify-content-lg-start aos-init" data-aos="fade-up">
+        @*<div class="d-flex justify-content-center justify-content-lg-start aos-init" data-aos="fade-up">
           <div class="d-flex mr-2">
             <i class="fas fa-star fa-lg text-warning m-1"></i>
             <i class="fas fa-star fa-lg text-warning m-1"></i>
@@ -29,7 +30,7 @@
             <i class="fas fa-star fa-lg text-warning m-1"></i>
           </div>
           <span class="text-white">(Average score: 4.9/5)</span>
-        </div>
+        </div>*@
       </div>
       <div class="col">
         <div class="row justify-content-center">
@@ -39,14 +40,14 @@
                 <div class="row">
                   <div class="col-12">
                     <div class="form-group mb-1">
-                      <label class="text-white">Quel essaim avez-vous identifié ?</label>
+                      <label class="text-white questions">Quel essaim avez-vous identifié ?</label>
                     </div>
                   </div>
                   <div class="col">
                     <div class="form-group rounded bg-white p-2 border">
                       <div class="custom-control custom-radio">
                         <input type="radio" id="course-radio-beginner-1" name="course-radio-1" class="custom-control-input">
-                        <label class="custom-control-label" for="course-radio-beginner-1">Abeilles</label>
+                        <label class="custom-control-label questions" for="course-radio-beginner-1">Abeilles</label>
                       </div>
                     </div>
                   </div>
@@ -54,7 +55,7 @@
                     <div class="form-group rounded bg-white p-2 border">
                       <div class="custom-control custom-radio">
                         <input type="radio" id="course-radio-advanced-1" name="course-radio-1" class="custom-control-input">
-                        <label class="custom-control-label" for="course-radio-advanced-1">Guêpes</label>
+                        <label class="custom-control-label questions" for="course-radio-advanced-1">Guêpes</label>
                       </div>
                     </div>
                   </div>
@@ -62,30 +63,30 @@
                     <div class="form-group rounded bg-white p-2 border">
                       <div class="custom-control custom-radio">
                         <input type="radio" id="course-radio-advanced-2" name="course-radio-1" class="custom-control-input">
-                        <label class="custom-control-label" for="course-radio-advanced-2">Frelons</label>
+                        <label class="custom-control-label questions" for="course-radio-advanced-2">Frelons</label>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="form-group">
-                @Html.LabelFor(model => model.PostalCode, new { @class = "text-white" })
+                @Html.LabelFor(model => model.PostalCode, new { @class = "text-white questions" })
                 @Html.TextBoxFor(model => model.PostalCode, new { @class = "form-control form-control-lg", @placeholder = "75018" })
                 @Html.ValidationMessageFor(model => model.PostalCode, "", new { @class = "errorMessage" })
               </div>
               <div class="form-group">
-                @Html.LabelFor(model => model.PhoneNumber, new { @class = "text-white" })
+                @Html.LabelFor(model => model.PhoneNumber, new { @class = "text-white questions" })
                 @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control form-control-lg", @placeholder = "0601020304" })
                 @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "errorMessage" })
               </div>
               <div class="form-group">
-                @Html.LabelFor(model => model.Email, new { @class = "text-white" })
+                @Html.LabelFor(model => model.Email, new { @class = "text-white questions" })
                 @Html.TextBoxFor(model => model.Email, new { @class = "form-control form-control-lg", @placeholder = "exemple@gmail.com" })
                 @Html.ValidationMessageFor(model => model.Email, "", new { @class = "errorMessage" })
               </div>
               <div class="form-group text-center text-white">
                 <input type="checkbox" />&nbsp;Valider les <a href="/About/CGU">CGU</a><br />
-                <input type="submit" class="btn btn-lg btn-success btn-block mb-2" value="Valider" />
+                <input type="submit" class="btn btn-lg btn-success btn-block mb-2" value="Rechercher un apiculteur" />
               </div>
             </form>
           </div>
@@ -94,72 +95,140 @@
     </div>
   </div>
 </section>
+<section class="overview-wrap" id="overview">
+  <div class="">
+    <div class="contenedor">
+      <h2 class="title-overview wow fadeInUp">Un essaim d'abeilles chez vous, que faire ?</h2>
+      <p class="subtitle-overview wow fadeInUp"></p>
+      <div class="row" style="padding-right: 10.8em; padding-left: 4.5em;">
+        <div class="col-md-1 col-lg-1"></div>
+        <div class="col-md-3 col-lg-2 wow bounceInUp" data-wow-duration="1.4s">
+          <div class="overview-box mx-auto">
+            <div class="prev-img-1">
+
+            </div>
+            <h5>Identifier l’essaim</h5>
+            <p class=" mb-0">Est-ce un essaim d’abeilles, de guêpes, de frelons ou de bourdons ? Comment les identifier</p>
+          </div>
+        </div>
+        <div class="col-md-1 col-lg-1"></div>
+        <div class="col-md-3 col-lg-2 wow bounceInUp" data-wow-duration="1.4s">
+          <div class="overview-box mx-auto">
+            <div class="prev-img-2">
+
+            </div>
+            <h5>Être <br />prudent</h5>
+            <p class=" mb-0">Un essaim d’abeilles ne manifeste aucune agressivité. Toutefois soyez prudent, il est formellement déconseillé d’intervenir sois-même. Ne laissez pas les enfants s’approcher et les animaux (surtout les chiens).</p>
+          </div>
+        </div>
+        <div class="col-md-1 col-lg-1"></div>
+        <div class="col-md-3 col-lg-2 wow bounceInUp" data-wow-duration="1.4s">
+          <div class="overview-box mx-auto">
+            <div class="prev-img-3">
+
+            </div>
+            <h5>Ne pas le détruire</h5>
+            <p class=" mb-0">Il interdit de détruire les essaims à coups d'insecticides. Vous mettrez en péril le nid, votre sécurité et vous vous placez dans l’illégalité. Les abeilles sont protégées par la loi.</p>
+          </div>
+        </div>
+        <div class="col-md-1 col-lg-1"></div>
+        <div class="col-md-3 col-lg-2 wow bounceInUp" data-wow-duration="1.4s">
+          <div class="overview-box mx-auto">
+            <div class="prev-img-4">
+
+            </div>
+            <h5>Remplir le formulaire</h5>
+            <p class=" mb-0">Entrez toutes les infos nécessaires. Nous vous mettrons en relation avec un Apiculteur Professionnel proche de chez vous.</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-lg-2"></div>
+      </div>
 
 
-<div class="background-bgform">
-  <div class="center-block-text">
-    <h3>
-      Un essaim d'abeilles s'est installé chez vous ?
-    </h3>
-    <br /><br />
-    <h4 style="font-weight:normal!important;">
-      Ne vous affolez pas, n'appelez pas non plus les pompiers, ils n'interviennent plus pour retirer les essaims.
-    </h4>
-    <br />
-    <h4 style="font-weight:normal!important;">
-      Remplissez le formulaire, et contactez un de nos apiculteurs, ils se feront un grand plaisir de répondre présents.
-    </h4>
-    <br />
-    <br />
+    </div>
   </div>
-  <form asp-controller="Search" asp-action="BeekeeperResults" class="form-center" method="post">
-    <div class="form-group">
-      <label>Avez-vous identifié l'essaim ?</label>
-      <div class="row">
-        <div class="ioo-container" onclick="selectSwarm(this);">
-          <img class="resize-swarm ioo-image" src="~/img/beeswarm.png" alt="Abeilles" />
-          <div class="ioo-middle">
-            <div class="ioo-text">Abeilles</div>
+</section>
+<section class="galeria">
+  <div class="sesgoarriba"></div>
+  <div class="imagenes">
+    <div class="enmica">
+      <br /><br /><br /><br />
+      <h2 style="text-align: center;
+  color: #582E13;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 64px;
+  margin-bottom: 23px;
+  font-family: Coolvetica;">
+        Quels avantages ?
+      </h2>
+    </div>
+  </div>
+</section>
+<section class="carousel-section">
+  <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="mask flex-center">
+          <div class="mcontainer">
+            <div class="row align-items-center">
+              <div class="col-md-7 col-12 order-md-1 order-2">
+                <h4 style="color: #FFA011; font-family: FFClanPro-BlackItalic;">
+                  Intervention gratuite
+                </h4>
+                <p style="color: #1F1F1F; font-family: Avenir;">
+                  Lorem ipsum dolor sit amet. Reprehenderit, qui blanditiis quidem rerum <br>
+                  necessitatibus praesentium voluptatum deleniti atque corrupti.
+                </p>
+                <a class="btn btn-rounded to-know-more" href="#">En savoir plus</a>
+              </div>
+              <div class="col-md-5 col-12 order-md-2 order-1"><img src="~/img/money.png" class="mx-auto" alt="slide"></div>
+            </div>
           </div>
         </div>
-
-        <div class="ioo-container padding-img" onclick="selectSwarm(this);">
-          <img class="resize-swarm ioo-image" src="~/img/vasp swarm.png" alt="Guêpes" />
-          <div class="ioo-middle">
-            <div class="ioo-text">Guêpes</div>
+      </div>
+      <div class="carousel-item">
+        <div class="mask flex-center">
+          <div class="mcontainer">
+            <div class="row align-items-center">
+              <div class="col-md-7 col-12 order-md-1 order-2">
+                <h4 style="color: #FFA011; font-family: FFClanPro-BlackItalic;">
+                  Préserver la biodiversité
+                </h4>
+                <p style="color: #1F1F1F; font-family: Avenir;">
+                  Lorem ipsum dolor sit amet. Reprehenderit, qui blanditiis quidem rerum <br>
+                  necessitatibus praesentium voluptatum deleniti atque corrupti.
+                </p>
+                <a class="btn btn-rounded to-know-more" href="#">En savoir plus</a>
+              </div>
+              <div class="col-md-5 col-12 order-md-2 order-1"><img src="~/img/flowers.png" class="mx-auto" alt="slide"></div>
+            </div>
           </div>
         </div>
-
-        <div class="ioo-container" onclick="selectSwarm(this);">
-          <img class="resize-swarm ioo-image" src="~/img/hornet swarm.png" alt="Frelons" />
-          <div class="ioo-middle">
-            <div class="ioo-text">Frelons</div>
+      </div>
+      <div class="carousel-item">
+        <div class="mask flex-center">
+          <div class="mcontainer">
+            <div class="row align-items-center">
+              <div class="col-md-7 col-12 order-md-1 order-2">
+                <h4 style="color: #FFA011; font-family: FFClanPro-BlackItalic;">
+                  Enrichir les ruches de vos apiculteurs locaux
+                </h4>
+                <p style="color: #1F1F1F; font-family: Avenir;">
+                  Lorem ipsum dolor sit amet. Reprehenderit, qui blanditiis quidem rerum <br>
+                  necessitatibus praesentium voluptatum deleniti atque corrupti.
+                </p>
+                <a class="btn btn-rounded to-know-more">En savoir plus</a>
+              </div>
+              <div class="col-md-5 col-12 order-md-2 order-1"><img src="~/img/honey.png" class="mx-auto" alt="slide"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="form-group">
-      @Html.LabelFor(model => model.PostalCode)
-      @Html.TextBoxFor(model => model.PostalCode, new { @class = "form-control" })
-      @Html.ValidationMessageFor(model => model.PostalCode, "", new { @class = "errorMessage" })
-    </div>
-    <div class="form-group">
-      @Html.LabelFor(model => model.PhoneNumber)
-      @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control" })
-      @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "errorMessage" })
-    </div>
-    <div class="form-group">
-      @Html.LabelFor(model => model.Email)
-      @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
-      @Html.ValidationMessageFor(model => model.Email, "", new { @class = "errorMessage" })
-    </div>
-    <div class="col-sm-4">
-      <input type="checkbox" />&nbsp;Valider les <a href="/About/CGU">CGU</a><br />
-      <input type="submit" class="form-control" value="Valider" />
-    </div>
-
-  </form>
-</div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+  </div>
+</section>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
