@@ -248,3 +248,4 @@ C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\bin\Debug\
 C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\Razor\Views\Beekeeper\ValidateSubscription.cshtml.g.cs
+C:\Users\francois\Documents\Nectar\Nectar\NctTest\NectarWeb\NectarWeb\obj\Debug\netcoreapp3.1\Razor\Views\About\CGU.cshtml.g.cs
