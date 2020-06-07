@@ -13,7 +13,7 @@ namespace NectarWeb.Controllers
     [Route("Contacter/Apiculteur")]
     public IActionResult Beekeeper()
     {
-      ViewBag.IsHome = false;
+      ViewBag.HasNavBackgroundImage = true;
       return View();
     }
 
@@ -21,7 +21,7 @@ namespace NectarWeb.Controllers
     [Route("Contacter/Apiculteur-resultats/")]
     public IActionResult BeekeeperResults(Models.ViewModels.SearchBeekeeperView model)
     {
-      ViewBag.IsHome = false;
+      ViewBag.HasNavBackgroundImage = false;
       if (!ModelState.IsValid)
       {
         return View("Beekeeper", model);

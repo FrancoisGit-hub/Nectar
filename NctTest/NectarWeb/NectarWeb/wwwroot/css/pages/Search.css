@@ -55,3 +55,63 @@
   font-family: Avenir;
   font-size: 30px!important;
 }
+
+.prev-img-1 {
+  background: url('/img/unnamed1-dark.png') no-repeat center center;
+  background-size: contain;
+  height: 150px;
+  margin-bottom: 19px;
+}
+
+  .prev-img-1:hover {
+    background: url('/img/unnamed1.png') no-repeat center center;
+    background-size: contain;
+    height: 150px;
+    margin-bottom: 19px;
+  }
+
+.prev-img-2 {
+  background: url('/img/unnamed2-dark.png') no-repeat center center;
+  background-size: contain;
+  height: 150px;
+  margin-bottom: 18px;
+}
+
+  .prev-img-2:hover {
+    background: url('/img/unnamed2.png') no-repeat center center;
+    background-size: contain;
+    height: 150px;
+    margin-bottom: 18px;
+  }
+
+.prev-img-3 {
+  background: url('/img/unnamed3-dark.png') no-repeat center center;
+  background-size: contain;
+  height: 158px;
+  margin-bottom: 10px;
+}
+
+  .prev-img-3:hover {
+    background: url('/img/unnamed3.png') no-repeat center center;
+    background-size: contain;
+    height: 158px;
+    margin-bottom: 10px;
+  }
+
+.prev-img-4 {
+  background: url('/img/unnamed4-dark.png') no-repeat center center;
+  background-size: contain;
+  height: 162px;
+  margin-bottom: 6px;
+}
+
+  .prev-img-4:hover {
+    background: url('/img/unnamed4.png') no-repeat center center;
+    background-size: contain;
+    height: 162px;
+    margin-bottom: 6px;
+  }
+
+/*header {
+  background: url('../../img/intervention.jpg') no-repeat center center !important;
+}*/

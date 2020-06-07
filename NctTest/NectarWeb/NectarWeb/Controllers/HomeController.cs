@@ -20,7 +20,7 @@ namespace NectarWeb.Controllers
 
     public IActionResult Index()
     {
-      ViewBag.IsHome = true;
+      ViewBag.HasNavBackgroundImage = true;
       return View();
     }
 

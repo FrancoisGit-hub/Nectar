@@ -13,14 +13,14 @@ namespace NectarWeb.Controllers
     [Route("Apiculteur/Inscription")]
     public IActionResult Subscription()
     {
-      ViewBag.IsHome = false;
+      ViewBag.HasNavBackgroundImage = false;
       return View();
     }
 
     [Route("Beekeeper/ValidateSubscription")]
     public IActionResult ValidateSubscription(BeekeeperSubscriptionView model)
     {
-      ViewBag.IsHome = false;
+      ViewBag.HasNavBackgroundImage = false;
       if (!ModelState.IsValid)
       {
         return View("Subscription", model);

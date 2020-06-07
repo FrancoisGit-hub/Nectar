@@ -67,3 +67,59 @@
   background-image: url('../../img/apiculteursetabeilles.jpg');
   background-size: cover;
 }
+
+.prev-img-1 {
+  background: url('/img/remplirformulaire.png') no-repeat center center;
+  background-size: contain;
+  height: 150px;
+  margin-bottom: 19px;
+}
+
+  .prev-img-1:hover {
+    background: url('/img/remplirformulaire_noir.png') no-repeat center center;
+    background-size: contain;
+    height: 150px;
+    margin-bottom: 19px;
+  }
+
+.prev-img-2 {
+  background: url('/img/valideapi.png') no-repeat center center;
+  background-size: contain;
+  height: 150px;
+  margin-bottom: 18px;
+}
+
+  .prev-img-2:hover {
+    background: url('/img/valideapi_noir.png') no-repeat center center;
+    background-size: contain;
+    height: 150px;
+    margin-bottom: 18px;
+  }
+
+.prev-img-3 {
+  background: url('/img/essaim.png') no-repeat center center;
+  background-size: contain;
+  height: 158px;
+  margin-bottom: 10px;
+}
+
+  .prev-img-3:hover {
+    background: url('/img/essaim_noir.png') no-repeat center center;
+    background-size: contain;
+    height: 158px;
+    margin-bottom: 10px;
+  }
+
+.prev-img-4 {
+  background: url('/img/enrichirruche.png') no-repeat center center;
+  background-size: contain;
+  height: 162px;
+  margin-bottom: 6px;
+}
+
+  .prev-img-4:hover {
+    background: url('/img/enrichirruche_noir.png') no-repeat center center;
+    background-size: contain;
+    height: 162px;
+    margin-bottom: 6px;
+  }

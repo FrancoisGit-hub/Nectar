@@ -8,9 +8,17 @@ namespace NectarWeb.Controllers
 {
   public class AboutController : Controller
   {
+    [Route("APropos/CGU")]
     public IActionResult CGU()
     {
-      ViewBag.IsHome = false;
+      ViewBag.HasNavBackgroundImage = false;
+      return View();
+    }
+
+    [Route("APropos/FAQ")]
+    public IActionResult FAQ()
+    {
+      ViewBag.HasNavBackgroundImage = false;
       return View();
     }
   }
