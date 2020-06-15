@@ -13,7 +13,7 @@ namespace NectarWeb.Controllers
     [Route("Apiculteur/Inscription")]
     public IActionResult Subscription()
     {
-      ViewBag.HasNavBackgroundImage = false;
+      ViewBag.HasNavBackgroundImage = true;
       return View();
     }
 
