@@ -30,7 +30,7 @@ namespace NectarWeb.Controllers
 
       using (var dal = new NectarDAL())
       {
-        return View(dal.GetBeekeepersByPostalCode(model.PostalCode));
+        return View(dal.GetBeekeepersResultsByPostalCode(model.PostalCode));
       }
       /*
       List<Beekeeper> results = new List<Beekeeper>();

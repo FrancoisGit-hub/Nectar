@@ -62,7 +62,7 @@ namespace NectarWeb.DAL
     {
       Open();
       List<Beekeeper> results = new List<Beekeeper>();
-      using (var command = new SqlCommand($"SELECT * FROM Beekeeper WHERE ZipCode like '{postalCode.Substring(0, 2)}%'", Connection))
+      using (var command = new SqlCommand($"SELECT * FROM Beekeeper WHERE ZipCode = '{postalCode}'", Connection))
       {
         using (var reader = command.ExecuteReader())
         {
@@ -84,6 +84,58 @@ namespace NectarWeb.DAL
               results.Add(beeKeeper);
           }
         }
+      }
+      return results;
+    }
+
+    public List<Beekeeper> GetBeekeepersByDepartment(string dpt)
+    {
+      Open();
+      List<Beekeeper> results = new List<Beekeeper>();
+      using (var command = new SqlCommand($"SELECT * FROM Beekeeper WHERE ZipCode like '{dpt}%'", Connection))
+      {
+        using (var reader = command.ExecuteReader())
+        {
+          while (reader.Read())
+          {
+            var beeKeeper = new Beekeeper();
+            beeKeeper.Id = reader.GetInt32(reader.GetOrdinal("BeekeeperId"));
+            beeKeeper.FirstName = reader["FirstName"].ToString();
+            beeKeeper.LastName = reader["LastName"].ToString();
+            beeKeeper.ZipCode = reader["ZipCode"].ToString();
+            beeKeeper.City = reader["StrCity"].ToString().Replace("#VALEUR!", "");
+            beeKeeper.Email = reader["Email"].ToString();
+            beeKeeper.Phone = new string[]
+            {
+              reader["Phone1"].ToString(),
+              reader["Phone2"].ToString()
+            };
+            if (!beeKeeper.FirstName.Contains("#VALEUR!") && !beeKeeper.LastName.Contains("#VALEUR!"))
+              results.Add(beeKeeper);
+          }
+        }
+      }
+      return results;
+    }
+
+    public List<Beekeeper> GetBeekeepersResultsByPostalCode(string postalCode)
+    {
+      List<Beekeeper> results = GetBeekeepersByPostalCode(postalCode);
+      foreach (var b in GetBeekeepersByDepartment(postalCode.Substring(0, 2)))
+      {
+        var isAlreadyInresults = false;
+        foreach (var r in results)
+        {
+          if (r.Id == b.Id)
+          {
+            isAlreadyInresults = true;
+          }
+          if (!isAlreadyInresults)
+          {
+            results.Add(r);
+          }
+        }
+        return results;
       }
       return results;
     }

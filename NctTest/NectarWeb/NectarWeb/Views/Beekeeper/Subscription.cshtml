@@ -14,21 +14,50 @@
 @*<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">*@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<section class="pt-5 pb-5 bg-dark position-relative background-bksearch-form ">
-  <div class="bg-overlay"></div>
-  <div class="container pt-5 pb-5 position-relative">
-    <div class="row d-flex justify-content-between pt-lg-5 align-items-center">
-      <div class="col-xl-5 col-lg-6 col-md-7 text-center text-lg-left mb-5 mb-lg-0">
-        <h1 class="display-3 font-weight-bold text-white aos-init aos-animate" data-aos="fade-up">
-          Rejoignez notre réseau d'apiculteurs
-        </h1>
-        <div class="my-4 aos-init" data-aos="fade-up">
-          <p class=" lead text-white">
-            Remplissez vos informations, nous vous enverrons un
-            mail de confirmation sous 24h
-          </p>
-        </div>
-        @*<div class="d-flex justify-content-center justify-content-lg-start aos-init" data-aos="fade-up">
+<header id="home">
+  <div class="overlay"></div>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="~/">
+        <h3 class="my-heading ">NECTAR</h3>
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars mfa-white"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/Contacter/Apiculteur">Particuliers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Apiculteur/Inscription">Apiculteurs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team"> Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="pt-5 pb-5 bg-dark position-relative background-bksearch-form ">
+    <div class="bg-overlay"></div>
+    <div class="container pt-5 pb-5 position-relative">
+      <div class="row d-flex justify-content-between pt-lg-5 align-items-center">
+        <div class="col-xl-5 col-lg-6 col-md-7 text-center text-lg-left mb-5 mb-lg-0">
+          <h1 class="display-3 font-weight-bold text-white aos-init aos-animate" data-aos="fade-up">
+            Rejoignez notre réseau d'apiculteurs
+          </h1>
+          <div class="my-4 aos-init" data-aos="fade-up">
+            <p class=" lead text-white">
+              Remplissez vos informations, nous vous enverrons un
+              mail de confirmation sous 24h
+            </p>
+          </div>
+          @*<div class="d-flex justify-content-center justify-content-lg-start aos-init" data-aos="fade-up">
             <div class="d-flex mr-2">
               <i class="fas fa-star fa-lg text-warning m-1"></i>
               <i class="fas fa-star fa-lg text-warning m-1"></i>
@@ -38,61 +67,76 @@
             </div>
             <span class="text-white">(Average score: 4.9/5)</span>
           </div>*@
-      </div>
-      <div class="col">
-        <div class="row justify-content-center">
-          <div class="col-xl-8 col-md-10">
-            <form asp-controller="Beekeeper" asp-action="ValidateSubscription" class="position-relative d-block aos-init aos-animate" data-aos="fade-up">
-              <div class="form-group">
-                @Html.LabelFor(model => model.Email, new { @class = "text-white" })
-                @Html.TextBoxFor(model => model.Email, new { @class = "form-control form-control-lg", @placeholder = "example@gmail.com" })
-                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "errorMessage" })
-                <small id="emailHelp" class="form-text text-muted">Nous ne fournirons votre mail à personne</small>
+        </div>
+        <div class="col">
+          <div class="row justify-content-center">
+            <div class="col-xl-8 col-md-10">
+              <form asp-controller="Beekeeper" asp-action="ValidateSubscription" class="position-relative d-block aos-init aos-animate" data-aos="fade-up">
+                <div class="form-group">
+                  @Html.LabelFor(model => model.Email, new { @class = "text-white" })
+                  @Html.TextBoxFor(model => model.Email, new { @class = "form-control form-control-lg", @placeholder = "example@gmail.com" })
+                  @Html.ValidationMessageFor(model => model.Email, "", new { @class = "errorMessage" })
+                  <small id="emailHelp" class="form-text text-muted">Nous ne fournirons votre mail à personne</small>
 
-                @*@Html.LabelFor(model => model.PostalCode, new { @class = "text-white" })
+                  @*@Html.LabelFor(model => model.PostalCode, new { @class = "text-white" })
                   @Html.TextBoxFor(model => model.PostalCode, new { @class = "form-control form-control-lg", @placeholder = "75018" })
                   @Html.ValidationMessageFor(model => model.PostalCode, "", new { @class = "errorMessage" })*@
-              </div>
-              <div class="form-group">
-                @Html.LabelFor(model => model.PostalCode, new { @class = "text-white" })
-                @Html.TextBoxFor(model => model.PostalCode, new { @class = "form-control form-control-lg", @placeholder = "75018" })
-                @Html.ValidationMessageFor(model => model.PostalCode, "", new { @class = "errorMessage" })
-                @*@Html.LabelFor(model => model.PhoneNumber, new { @class = "text-white" })
+                </div>
+                <div class="form-group">
+                  @Html.LabelFor(model => model.PostalCode, new { @class = "text-white" })
+                  @Html.TextBoxFor(model => model.PostalCode, new { @class = "form-control form-control-lg", @placeholder = "75018" })
+                  @Html.ValidationMessageFor(model => model.PostalCode, "", new { @class = "errorMessage" })
+                  @*@Html.LabelFor(model => model.PhoneNumber, new { @class = "text-white" })
                   @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control form-control-lg", @placeholder = "0601020304" })
                   @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "errorMessage" })*@
-              </div>
-              <div class="form-group">
-                @Html.LabelFor(model => model.FirstName, new { @class = "text-white" })
-                @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control form-control-lg", @placeholder = "Francois" })
-                @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "errorMessage" })
-              </div>
-              <div class="form-group">
-                @Html.LabelFor(model => model.LastName, new { @class = "text-white" })
-                @Html.TextBoxFor(model => model.LastName, new { @class = "form-control form-control-lg", @placeholder = "Dupont" })
-                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "errorMessage" })
-                @*@Html.LabelFor(model => model.Email, new { @class = "text-white" })
+                </div>
+                <div class="form-group">
+                  @Html.LabelFor(model => model.FirstName, new { @class = "text-white" })
+                  @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control form-control-lg", @placeholder = "Francois" })
+                  @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "errorMessage" })
+                </div>
+                <div class="form-group">
+                  @Html.LabelFor(model => model.LastName, new { @class = "text-white" })
+                  @Html.TextBoxFor(model => model.LastName, new { @class = "form-control form-control-lg", @placeholder = "Dupont" })
+                  @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "errorMessage" })
+                  @*@Html.LabelFor(model => model.Email, new { @class = "text-white" })
                   @Html.TextBoxFor(model => model.Email, new { @class = "form-control form-control-lg", @placeholder = "exemple@gmail.com" })
                   @Html.ValidationMessageFor(model => model.Email, "", new { @class = "errorMessage" })*@
-              </div>
-              <div class="form-group">
-                @Html.LabelFor(model => model.PhoneNumber, new { @class = "text-white" })
-                @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control form-control-lg", @placeholder = "0685479625" })
-                @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "errorMessage" })
-                @*@Html.LabelFor(model => model.Email, new { @class = "text-white" })
+                </div>
+                <div class="form-group">
+                  @Html.LabelFor(model => model.PhoneNumber, new { @class = "text-white" })
+                  @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control form-control-lg", @placeholder = "0685479625" })
+                  @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "errorMessage" })
+                  @*@Html.LabelFor(model => model.Email, new { @class = "text-white" })
                   @Html.TextBoxFor(model => model.Email, new { @class = "form-control form-control-lg", @placeholder = "exemple@gmail.com" })
                   @Html.ValidationMessageFor(model => model.Email, "", new { @class = "errorMessage" })*@
-              </div>
-              <div class="form-group text-center text-white">
-                <input type="checkbox" />&nbsp;Valider les <a href="/About/CGU">CGU</a><br />
-                <button type="submit" class="btn btn-lg btn-success btn-block mb-2">Valider</button>
-              </div>
-            </form>
+                </div>
+                <div class="form-group text-center text-white">
+                  <input type="checkbox" />&nbsp;Valider les <a href="/About/CGU">CGU</a><br />
+                  <button type="submit" class="btn btn-lg btn-success btn-block mb-2">Valider</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  @*<table class="table-full background-home">
+      <tr>
+        <td class="half-nest">
+          <h1 class="title-home frtest">Vous avez un essaim <br /><span> d'abeilles chez vous ?</span> </h1>
+          <br />
+          <span class="beekeeper-btn-contact">
+            <button class="btn-home btn btn-primary btn-rounded" onclick="window.location.href='/Contacter/Apiculteur'">Contacter un apiculteur</button>
+          </span>
+        </td>
+        <td>
+        </td>
+      </tr>
+    </table>*@
+</header>
+
 <section class="overview-wrap" id="overview">
   <div class="">
     <div class="contenedor">
