@@ -1,0 +1,9 @@
+﻿body {
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 50%;
+}
+
+.carousel-item {
+    width: 50px !important;
+}
