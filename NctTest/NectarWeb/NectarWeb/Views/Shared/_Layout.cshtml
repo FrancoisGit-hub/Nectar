@@ -1,134 +1,140 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 @{
-  var HasNavBackgroundImage = ViewBag.HasNavBackgroundImage;
+    var HasNavBackgroundImage = ViewBag.HasNavBackgroundImage;
+    var HasFooter = ViewBag.HasFooter;
+    var description = ViewData["MetaDescription"] ?? string.Empty;
 }
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>@ViewData["Title"] - Nectar</title>
-  @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!------ Include the above in your HEAD tag ---------->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Nectar</title>
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
 
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
-  <link rel="stylesheet" href="~/css/site.css?id=7" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+    <link rel="stylesheet" href="~/css/site.css?id=7" />
 </head>
 <body>
-  @if (!HasNavBackgroundImage)
-  {
-    <header style="height:48px;">
-      <div class="overlay"></div>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="~/">
-            <h3 class="my-heading ">NECTAR</h3>
-          </a>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="fa fa-bars mfa-white"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="/Contacter/Apiculteur">Particuliers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/Apiculteur/Inscription">Apiculteurs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#team"> Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#testimonials">Contact</a>
-              </li>
-            </ul>
+    @if (!HasNavBackgroundImage)
+    {
+        <header style="height:48px;">
+            <div class="overlay"></div>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="~/">
+                        <h3 class="my-heading ">NECTAR</h3>
+                    </a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars mfa-white"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Contacter/Apiculteur">Particuliers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Apiculteur/Inscription">Apiculteurs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#team"> Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#testimonials">Contact</a>
+                            </li>
+                        </ul>
 
-          </div>
+                    </div>
 
-        </div>
-      </nav>
-      @*<nav style="background-color: #fe9800!important;" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-          <div class="container">
-            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Nectar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse navbar-items">
-              <ul class="navbar-nav flex-grow-1">
-                <li class="nav-item">
-                  <a id="askBeekeeper" class="nav-link text-dark" onclick="window.location.href='/Contacter/Apiculteur'">Particulier</a>
-                </li>
-                <li class="nav-item">
-                  <a id="beekeeperPage" class="nav-link text-dark" onclick="window.location.href='/Apiculteur/'">Apiculteur</a>
-                </li>
-                <li class="nav-item">
-                  <a id="blog" class="nav-link text-dark" asp-area="" asp-controller="Apiculteur" asp-action="Privacy">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a id="contactUs" class="nav-link text-dark" asp-area="" asp-controller="Apiculteur" asp-action="Privacy">Contact</a>
-                </li>
-              </ul>
+                </div>
+            </nav>
+            @*<nav style="background-color: #fe9800!important;" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                  <div class="container">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Nectar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse navbar-items">
+                      <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                          <a id="askBeekeeper" class="nav-link text-dark" onclick="window.location.href='/Contacter/Apiculteur'">Particulier</a>
+                        </li>
+                        <li class="nav-item">
+                          <a id="beekeeperPage" class="nav-link text-dark" onclick="window.location.href='/Apiculteur/'">Apiculteur</a>
+                        </li>
+                        <li class="nav-item">
+                          <a id="blog" class="nav-link text-dark" asp-area="" asp-controller="Apiculteur" asp-action="Privacy">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                          <a id="contactUs" class="nav-link text-dark" asp-area="" asp-controller="Apiculteur" asp-action="Privacy">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>*@
+        </header>
+    }
+
+    <div>
+        @RenderBody()
+    </div>
+
+    @if (HasFooter)
+    {
+        <footer class="border-top footer text-muted">
+            <!-- Footer -->
+            <div class="container">
+                <div class="row text-center text-xs-center text-sm-left text-md-left">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Que recherchez-vous ?</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li><a href="/"><i class="fa fa-angle-double-right"></i>Accueil</a></li>
+                            <li><a href="/Contacter/Apiculteur"><i class="fa fa-angle-double-right"></i>Je recherche un apiculteur</a></li>
+                            <li><a href="/Apiculteur/Inscription"><i class="fa fa-angle-double-right"></i>Je suis un apiculteur</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>À propos</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li><a href="/APropos/FAQ"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                            <li><a href="/APropos/CGU"><i class="fa fa-angle-double-right"></i>CGU</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                        <ul class="list-unstyled list-inline social text-center">
+                            <li class="list-inline-item"><a href="https://www.facebook.com/appnectar/"><i class="fa fa-facebook"></i></a></li>
+                            @*<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-google-plus"></i></a></li>*@
+                            <li class="list-inline-item"><a href="mailto:appnectar@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-black-50">
+                        <p class="h6" style="color:black!important"><b>© Nectar </b> @DateTime.Now.Year.ToString()  - Tous droits réservés</p>
+                    </div>
+                    <hr>
+                </div>
             </div>
-          </div>
-        </nav>*@
-    </header>
-  }
+            <!-- ./Footer -->
+        </footer>
+    }
 
-  <div>
-    @RenderBody()
-  </div>
-
-  <footer class="border-top footer text-muted">
-    <!-- Footer -->
-      <div class="container">
-        <div class="row text-center text-xs-center text-sm-left text-md-left">
-          <div class="col-xs-12 col-sm-4 col-md-4">
-            <h5>Que recherchez-vous ?</h5>
-            <ul class="list-unstyled quick-links">
-              <li><a href="/"><i class="fa fa-angle-double-right"></i>Accueil</a></li>
-              <li><a href="/Contacter/Apiculteur"><i class="fa fa-angle-double-right"></i>Je recherche un apiculteur</a></li>
-              <li><a href="/Apiculteur/Inscription"><i class="fa fa-angle-double-right"></i>Je suis un apiculteur</a></li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-sm-4 col-md-4">
-            
-          </div>
-          <div class="col-xs-12 col-sm-4 col-md-4">
-            <h5>À propos</h5>
-            <ul class="list-unstyled quick-links">
-              <li><a href="/APropos/FAQ"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-              <li><a href="/APropos/CGU"><i class="fa fa-angle-double-right"></i>CGU</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-            <ul class="list-unstyled list-inline social text-center">
-              <li class="list-inline-item"><a href="https://www.facebook.com/appnectar/"><i class="fa fa-facebook"></i></a></li>
-              @*<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a></li>
-              <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-google-plus"></i></a></li>*@
-              <li class="list-inline-item"><a href="mailto:appnectar@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
-            </ul>
-          </div>
-          <hr>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-black-50">
-            <p class="h6" style="color:black!important"><b>© Nectar </b> @DateTime.Now.Year.ToString()  - Tous droits réservés</p>
-          </div>
-          <hr>
-        </div>
-      </div>
-    <!-- ./Footer -->
-  </footer>
-  <script src="~/lib/jquery/dist/jquery.min.js"></script>
-  <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="~/js/site.js" asp-append-version="true"></script>
-  @RenderSection("Scripts", required: false)
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

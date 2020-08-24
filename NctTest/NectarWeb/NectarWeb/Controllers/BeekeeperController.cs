@@ -8,30 +8,32 @@ using NectarWeb.Models.ViewModels;
 
 namespace NectarWeb.Controllers
 {
-  public class BeekeeperController : Controller
-  {
-    [Route("Apiculteur/Inscription")]
-    public IActionResult Subscription()
+    public class BeekeeperController : Controller
     {
-      ViewBag.HasNavBackgroundImage = true;
-      return View();
-    }
+        [Route("Apiculteur/Inscription")]
+        public IActionResult Subscription()
+        {
+            ViewBag.HasFooter = true;
+            ViewBag.HasNavBackgroundImage = true;
+            return View();
+        }
 
-    [Route("Beekeeper/ValidateSubscription")]
-    public IActionResult ValidateSubscription(BeekeeperSubscriptionView model)
-    {
-      ViewBag.HasNavBackgroundImage = false;
-      if (!ModelState.IsValid)
-      {
-        return View("Subscription", model);
-      }
+        [Route("Beekeeper/ValidateSubscription")]
+        public IActionResult ValidateSubscription(BeekeeperSubscriptionView model)
+        {
+            ViewBag.HasFooter = true;
+            ViewBag.HasNavBackgroundImage = false;
+            if (!ModelState.IsValid)
+            {
+                return View("Subscription", model);
+            }
 
-      // Save subscription
-      using(var dal = new NectarDAL())
-      {
-        dal.SaveBeekeeperSubscription(model);
-      }
-      return View();
+            // Save subscription
+            using (var dal = new NectarDAL())
+            {
+                dal.SaveBeekeeperSubscription(model);
+            }
+            return View();
+        }
     }
-  }
 }

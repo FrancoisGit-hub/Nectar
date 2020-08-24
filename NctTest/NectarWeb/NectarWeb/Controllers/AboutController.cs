@@ -6,20 +6,22 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace NectarWeb.Controllers
 {
-  public class AboutController : Controller
-  {
-    [Route("APropos/CGU")]
-    public IActionResult CGU()
+    public class AboutController : Controller
     {
-      ViewBag.HasNavBackgroundImage = false;
-      return View();
-    }
+        [Route("APropos/CGU")]
+        public IActionResult CGU()
+        {
+            ViewBag.HasFooter = true;
+            ViewBag.HasNavBackgroundImage = false;
+            return View();
+        }
 
-    [Route("APropos/FAQ")]
-    public IActionResult FAQ()
-    {
-      ViewBag.HasNavBackgroundImage = false;
-      return View();
+        [Route("APropos/FAQ")]
+        public IActionResult FAQ()
+        {
+            ViewBag.HasFooter = true;
+            ViewBag.HasNavBackgroundImage = false;
+            return View();
+        }
     }
-  }
 }

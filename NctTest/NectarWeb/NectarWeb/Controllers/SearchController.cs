@@ -8,76 +8,78 @@ using NectarWeb.Models;
 
 namespace NectarWeb.Controllers
 {
-  public class SearchController : Controller
-  {
-    [Route("Contacter/Apiculteur")]
-    public IActionResult Beekeeper()
+    public class SearchController : Controller
     {
-      ViewBag.HasNavBackgroundImage = true;
-      return View();
-    }
-
-
-    [Route("Contacter/Apiculteur-resultats/")]
-    public IActionResult BeekeeperResults(Models.ViewModels.SearchBeekeeperView model)
-    {
-      ViewBag.HasNavBackgroundImage = false;
-      if (!ModelState.IsValid)
-      {
-        return View("Beekeeper", model);
-      }
-
-
-      using (var dal = new NectarDAL())
-      {
-        return View(dal.GetBeekeepersResultsByPostalCode(model.PostalCode));
-      }
-      /*
-      List<Beekeeper> results = new List<Beekeeper>();
-      results.Add(new Beekeeper()
-      {
-        Id = 1,
-        FirstName = "Johan", 
-        LastName = "Neveux", 
-        ZipCode = "92800", 
-        City = "Asnières", 
-        Email = "johan.neveux@gmail.com", 
-        Phone = new string[]
+        [Route("Contacter/Apiculteur")]
+        public IActionResult Beekeeper()
         {
-          "0684666461"
+            ViewBag.HasFooter = true;
+            ViewBag.HasNavBackgroundImage = true;
+            return View();
         }
-      });
 
-      results.Add(new Beekeeper()
-      {
-        Id = 2,
-        FirstName = "Christopher",
-        LastName = "Lallau",
-        ZipCode = "93800",
-        City = "Bondy",
-        Email = "chris@gmail.com",
-        Phone = new string[]
+
+        [Route("Contacter/Apiculteur-resultats/")]
+        public IActionResult BeekeeperResults(Models.ViewModels.SearchBeekeeperView model)
         {
-          "0684515132"
+            ViewBag.HasFooter = true;
+            ViewBag.HasNavBackgroundImage = false;
+            if (!ModelState.IsValid)
+            {
+                return View("Beekeeper", model);
+            }
+
+
+            using (var dal = new NectarDAL())
+            {
+                return View(dal.GetBeekeepersResultsByPostalCode(model.PostalCode));
+            }
+
+            //List<Beekeeper> results = new List<Beekeeper>();
+            //results.Add(new Beekeeper()
+            //{
+            //    Id = 1,
+            //    FirstName = "Johan",
+            //    LastName = "Neveux",
+            //    ZipCode = "92800",
+            //    City = "Asnières",
+            //    Email = "johan.neveux@gmail.com",
+            //    Phone = new string[]
+            //  {
+            //    "0684666461"
+            //  }
+            //});
+
+            //results.Add(new Beekeeper()
+            //{
+            //    Id = 2,
+            //    FirstName = "Christopher",
+            //    LastName = "Lallau",
+            //    ZipCode = "93800",
+            //    City = "Bondy",
+            //    Email = "chris@gmail.com",
+            //    Phone = new string[]
+            //  {
+            //    "0684515132"
+            //  }
+            //});
+
+            //results.Add(new Models.Beekeeper()
+            //{
+            //    Id = 3,
+            //    FirstName = "Francois",
+            //    LastName = "Gittenait",
+            //    ZipCode = "75018",
+            //    City = "Paris",
+            //    Email = "gittenait.francois@gmail.com",
+            //    Phone = new string[]
+            // {
+            //    "0601020304"
+            // }
+            //});
+
+            //return View(results);
+
         }
-      });
-
-      results.Add(new Models.Beekeeper()
-      {
-        Id = 3,
-        FirstName = "Francois",
-        LastName = "Gittenait",
-        ZipCode = "75018",
-        City = "Paris",
-        Email = "gittenait.francois@gmail.com",
-        Phone = new string[]
-       {
-          "0601020304"
-       }
-      });
-
-      return View(results);
-      */
     }
-  }
 }
