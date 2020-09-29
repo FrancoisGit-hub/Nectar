@@ -78,8 +78,7 @@ namespace NectarWeb.DAL
                         beeKeeper.Email = reader["Email"].ToString();
                         beeKeeper.Phone = new string[]
                         {
-              reader["Phone1"].ToString(),
-              reader["Phone2"].ToString()
+              reader["Phone1"].ToString()
                         };
                         if (!beeKeeper.FirstName.Contains("#VALEUR!") && !beeKeeper.LastName.Contains("#VALEUR!"))
                             results.Add(beeKeeper);
@@ -119,29 +118,32 @@ namespace NectarWeb.DAL
             return results;
         }
 
+        private bool IsBeekeeperInResults(int id, List<Beekeeper> results)
+        {
+            foreach (var r in results)
+            {
+                if (id == r.Id)
+                    return true;
+            }
+            return false;
+        }
+
         public List<Beekeeper> GetBeekeepersResultsByPostalCode(string postalCode)
         {
             List<Beekeeper> results = GetBeekeepersByPostalCode(postalCode);
             foreach (var b in GetBeekeepersByDepartment(postalCode.Substring(0, 2)))
             {
-                var isAlreadyInresults = false;
                 if (results.Count == 0)
-                    results.Add(b);
-
-                foreach (var r in results)
                 {
-                    if (r.Id == b.Id)
-                    {
-                        isAlreadyInresults = true;
-                    }
-                    if (!isAlreadyInresults)
-                    {
-                        results.Add(r);
-                    }
+                    results.Add(b);
                 }
-                return results;
+                else
+                {
+                    if (!IsBeekeeperInResults(b.Id, results))
+                        results.Add(b);
+                }
             }
-            return results;
+            return results.Take(5).ToList();
         }
     }
 }

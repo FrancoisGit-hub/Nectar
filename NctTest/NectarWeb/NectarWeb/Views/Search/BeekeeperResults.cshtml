@@ -5,33 +5,34 @@
     ViewData["MetaDescription"] = "Merci d'avoir rempli le formulaire et de permettre aux apiculteurs de faire fructifier leurs ruches.";
 }
 
-<script type="text/javascript" src="~/js/pages/BeekeeperResults.js?id=2"></script>
+<link rel="stylesheet" href="~/css/pages/ResultsBeekeepers.css?id=2" />
+<script type="text/javascript" src="~/js/pages/BeekeeperResults.js?id=4"></script>
 
-<div class="jumbotron text-center">
-    <h1 class="display-3">Merci de faire confiance à Nectar</h1>
-    <p class="lead"><strong>Veuillez consulter vos e-mails.</strong> Voici la liste des 5 apiculteurs les plus proches :</p>
+<div class="jumbotron text-center background-page">
+    <h1 class="display-3 title-main">Merci de faire confiance à Nectar</h1>
+    <p class="lead subtitle-main"><strong>Veuillez consulter vos e-mails.</strong> Voici la liste des 5 apiculteurs les plus proches :</p>
     <hr>
     <div style="text-align:center;">
         @foreach (var item in Model)
         {
             var id = item.Id;
-            <div style="border-width: 2px; border-radius: 4px; border-style:solid; width:50%; margin-left: auto; margin-right: auto;">
-                <h3>@item.FirstName @item.LastName</h3>
+            <div class="div-results">
+                <h3 class="beekeeper-names">@item.FirstName @item.LastName</h3>
                 <p>
                     @item.ZipCode - @item.City
                     <br />
-                    <button id="btn-contact-@id" onclick="alert('test');" class="btn btn-primary" style="position:absolute;">Voir le contact</button>
                     <div style="display: none;" id="div-contact-@id">
                         @foreach (var tel in item.Phone)
                         {
                             if (!string.IsNullOrEmpty(tel))
                             {
-                                <a href="tel:@tel">@tel</a>
-                                <br />
+                        <a href="tel:@tel">@tel</a>
+                        <br />
                             }
                         }
                         <a href="mailto: @item.Email">@item.Email</a>
                     </div>
+                    <button id="btn-contact-@id" onclick="document.getElementById('btn-contact-@id').style.display = 'none';document.getElementById('div-contact-@id').style.display = 'block';" class="btn btn-primary">Voir le contact</button>
                 </p>
             </div>
             <br />

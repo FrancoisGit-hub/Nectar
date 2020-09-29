@@ -23,7 +23,7 @@ namespace NectarWeb.Controllers
         public IActionResult BeekeeperResults(Models.ViewModels.SearchBeekeeperView model)
         {
             ViewBag.HasFooter = true;
-            ViewBag.HasNavBackgroundImage = false;
+            ViewBag.HasNavBackgroundImage = true;
             if (!ModelState.IsValid)
             {
                 return View("Beekeeper", model);

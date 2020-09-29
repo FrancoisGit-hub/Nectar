@@ -121,3 +121,18 @@
 /*header {
   background: url('../../img/intervention.jpg') no-repeat center center !important;
 }*/
+
+@media all and (min-width: 1024px) and (max-width: 1600px) {
+
+
+}
+
+@media all and (min-width: 512px) and (max-width: 1024px) {
+
+}
+
+@media all and (max-width: 512px) {
+    #overview {
+        padding-top:220%;
+    }
+}
