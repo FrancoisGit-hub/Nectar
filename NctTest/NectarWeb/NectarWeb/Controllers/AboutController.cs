@@ -8,6 +8,7 @@ namespace NectarWeb.Controllers
 {
     public class AboutController : Controller
     {
+        // TEST COMMIT
         [Route("APropos/CGU")]
         public IActionResult CGU()
         {
