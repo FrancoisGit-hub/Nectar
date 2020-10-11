@@ -52,6 +52,24 @@ a {
   border-color: #1861ac;
 }
 
+.btn-nectar {
+    font-family: Avenir;
+    letter-spacing: 1px;
+    /*border: 2px solid black !important;*/
+    border: 0px;
+    border-radius: 40px !important;
+    transition: all 0.3s ease 0s;
+    /*font-size: 30px;*/
+    background-color: #1F1F1F;
+    color: #F9C546;
+}
+
+    .btn-nectar:hover {
+        background-color: #F9C546;
+        color: #1F1F1F;
+        box-shadow: 5px 10px 18px #4B4949;
+    }
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #1b6ec2;

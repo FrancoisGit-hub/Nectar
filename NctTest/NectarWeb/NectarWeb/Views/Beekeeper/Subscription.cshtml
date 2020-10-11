@@ -1,8 +1,9 @@
 ﻿@using NectarWeb.Models.ViewModels
 @model BeekeeperSubscriptionView
 @{
-    ViewData["Title"] = "Fructifiez vos ruches | Rejoignez notre communauté";
-    ViewData["MetaDescription"] = "Inscription simple et gratuite. Proposez vos services d'intervention d'essaim d'abeilles à de nombreux particuliers et faites fructifiez vos ruches.";
+    ViewData["Title"] = "Rejoignez notre communauté d'apiculteurs | Nectar";
+    ViewData["MetaDescription"] = "Rejoignez notre communauté d'apiculteurs et intervenez chez des particuliers proche de chez vous. Inscrivez-vous en remplisssant le formulaire.";
+    ViewData["KeyWords"] = "Ruches, communauté, apiculteurs";
 }
 
 <link rel="stylesheet" href="~/css/tools/MyCarousel.css?id=2" />
@@ -10,7 +11,7 @@
 <link rel="stylesheet" href="~/css/tools/image-overlay-opacity.css?id=2" />
 <script src="~/js/pages/Beekeeper.js?id=2"></script>
 <link rel="stylesheet" href="~/css/pages/beekeepersSubscription.css?id=4" />
-<link rel="stylesheet" href="~/css/tools/FormValidation.css?id=2" />
+<link rel="stylesheet" href="~/css/tools/FormValidation.css?id=4" />
 
 @*<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">*@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -71,11 +72,11 @@
                 </div>
                 <div class="col">
                     <div class="row justify-content-center">
-                        <div class="col-xl-8 col-md-10">
+                        <div class="col-xl-8 col-md-10 vignett">
                             <form asp-controller="Beekeeper" asp-action="ValidateSubscription" class="position-relative d-block aos-init aos-animate" data-aos="fade-up">
                                 <div class="form-group">
-                                    @Html.LabelFor(model => model.Email, new { @class = "text-white" })
-                                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control form-control-lg", @placeholder = "example@gmail.com" })
+                                    @Html.LabelFor(model => model.Email, new { @class = "" })
+                                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control form-control-lg text-input-form", @placeholder = "example@gmail.com" })
                                     @Html.ValidationMessageFor(model => model.Email, "", new { @class = "errorMessage" })
                                     <small id="emailHelp" class="form-text text-muted">Nous ne fournirons votre mail à personne</small>
 
@@ -84,35 +85,35 @@
                                         @Html.ValidationMessageFor(model => model.PostalCode, "", new { @class = "errorMessage" })*@
                                 </div>
                                 <div class="form-group">
-                                    @Html.LabelFor(model => model.PostalCode, new { @class = "text-white" })
-                                    @Html.TextBoxFor(model => model.PostalCode, new { @class = "form-control form-control-lg", @placeholder = "75018" })
+                                    @Html.LabelFor(model => model.PostalCode, new { @class = "" })
+                                    @Html.TextBoxFor(model => model.PostalCode, new { @class = "form-control form-control-lg text-input-form", @placeholder = "75018" })
                                     @Html.ValidationMessageFor(model => model.PostalCode, "", new { @class = "errorMessage" })
                                     @*@Html.LabelFor(model => model.PhoneNumber, new { @class = "text-white" })
                                         @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control form-control-lg", @placeholder = "0601020304" })
                                         @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "errorMessage" })*@
                                 </div>
                                 <div class="form-group">
-                                    @Html.LabelFor(model => model.FirstName, new { @class = "text-white" })
-                                    @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control form-control-lg", @placeholder = "Francois" })
+                                    @Html.LabelFor(model => model.FirstName, new { @class = "" })
+                                    @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control form-control-lg text-input-form", @placeholder = "Francois" })
                                     @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "errorMessage" })
                                 </div>
                                 <div class="form-group">
-                                    @Html.LabelFor(model => model.LastName, new { @class = "text-white" })
-                                    @Html.TextBoxFor(model => model.LastName, new { @class = "form-control form-control-lg", @placeholder = "Dupont" })
+                                    @Html.LabelFor(model => model.LastName, new { @class = "" })
+                                    @Html.TextBoxFor(model => model.LastName, new { @class = "form-control form-control-lg text-input-form", @placeholder = "Dupont" })
                                     @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "errorMessage" })
                                     @*@Html.LabelFor(model => model.Email, new { @class = "text-white" })
                                         @Html.TextBoxFor(model => model.Email, new { @class = "form-control form-control-lg", @placeholder = "exemple@gmail.com" })
                                         @Html.ValidationMessageFor(model => model.Email, "", new { @class = "errorMessage" })*@
                                 </div>
                                 <div class="form-group">
-                                    @Html.LabelFor(model => model.PhoneNumber, new { @class = "text-white" })
-                                    @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control form-control-lg", @placeholder = "0685479625" })
+                                    @Html.LabelFor(model => model.PhoneNumber, new { @class = "" })
+                                    @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control form-control-lg text-input-form", @placeholder = "0685479625" })
                                     @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "errorMessage" })
                                     @*@Html.LabelFor(model => model.Email, new { @class = "text-white" })
                                         @Html.TextBoxFor(model => model.Email, new { @class = "form-control form-control-lg", @placeholder = "exemple@gmail.com" })
                                         @Html.ValidationMessageFor(model => model.Email, "", new { @class = "errorMessage" })*@
                                 </div>
-                                <div class="form-group text-center text-white bold">
+                                <div class="form-group text-center bold">
                                     <input type="checkbox" />&nbsp;Valider les <a href="/Apropos/CGU">CGU</a><br />
                                     <button type="submit" class="btn btn-lg btn-success btn-block mb-2">Valider</button>
                                 </div>

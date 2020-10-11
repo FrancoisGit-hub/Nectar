@@ -2,3 +2,16 @@
   color: red;
   font-size: small;
 }
+
+
+.vignett {
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 0 0 2px 2px grey;
+    background-color: white;
+}
+
+.text-input-form {
+    background-color: #e3e8f2!important;
+}
