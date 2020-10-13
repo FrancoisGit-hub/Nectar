@@ -22,7 +22,7 @@
 
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
-    <link rel="stylesheet" href="~/css/site.css?id=7" />
+    <link rel="stylesheet" href="~/css/site.css?id=8" />
 </head>
 <body>
     @if (!HasNavBackgroundImage)
@@ -96,8 +96,8 @@
             <div class="container">
                 <div class="row text-center text-xs-center text-sm-left text-md-left">
                     <div class="col-xs-12 col-sm-4 col-md-4">
-                        <h5>Que recherchez-vous ?</h5>
-                        <ul class="list-unstyled quick-links">
+                        <h5 class="footer-title">Que recherchez-vous ?</h5>
+                        <ul class="list-unstyled quick-links footer-headings">
                             <li><a href="/"><i class="fa fa-angle-double-right"></i>Accueil</a></li>
                             <li><a href="/Contacter/Apiculteur"><i class="fa fa-angle-double-right"></i>Je recherche un apiculteur</a></li>
                             <li><a href="/Apiculteur/Inscription"><i class="fa fa-angle-double-right"></i>Je suis un apiculteur</a></li>
@@ -107,8 +107,8 @@
 
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4">
-                        <h5>À propos</h5>
-                        <ul class="list-unstyled quick-links">
+                        <h5 class="footer-title">À propos</h5>
+                        <ul class="list-unstyled quick-links footer-headings">
                             <li><a href="/APropos/FAQ"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
                             <li><a href="/APropos/CGU"><i class="fa fa-angle-double-right"></i>CGU</a></li>
                         </ul>
@@ -128,7 +128,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-black-50">
-                        <p class="h6" style="color:black!important"><b>© Nectar </b> @DateTime.Now.Year.ToString()  - Tous droits réservés</p>
+                        <p class="h6 footer-copyright"><b>© Nectar </b> @DateTime.Now.Year.ToString()  - Tous droits réservés</p>
                     </div>
                     <hr>
                 </div>
