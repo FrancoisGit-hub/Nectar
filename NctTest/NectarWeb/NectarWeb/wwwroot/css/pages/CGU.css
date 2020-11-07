@@ -14,3 +14,15 @@
   position: relative !important;
   text-align: left !important;
 }
+
+.overlay {
+    background-color: white!important;
+}
+
+.nav-link {
+    color: black!important;
+}
+
+.navbar-brand {
+    color: black!important;
+}

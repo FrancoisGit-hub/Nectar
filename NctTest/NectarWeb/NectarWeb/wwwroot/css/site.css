@@ -255,6 +255,13 @@ li.nav-item {
     font-family: Coolvetica;
 }
 
+.title-main2 {
+    font-size: 80px;
+    text-transform: uppercase;
+    /*font-style: italic;*/
+    font-family: Coolvetica;
+}
+
 .subtitle-main {
     font-size: 30px;
     margin-bottom: 35px;
@@ -812,7 +819,7 @@ footer.footer {
 
 .footer-title {
     color: #FFA011 !important;
-    font-family: FFClanPro-BlackItalic;
+    font-family: Coolvetica;
     font-size: 25px !important;
 }
 
