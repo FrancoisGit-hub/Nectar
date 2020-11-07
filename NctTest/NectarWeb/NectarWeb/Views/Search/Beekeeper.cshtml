@@ -70,6 +70,7 @@
                 <div class="col">
                     <div class="row justify-content-center">
                         <div class="col-xl-8 col-md-10 vignett">
+                            <!-- Form on submit is working with checkSwarmTypeBeforeSubmit() in Beekeeper.js minified  -->
                             <form asp-controller="Search" asp-action="BeekeeperResults" id="searchForm" class="position-relative d-block aos-init aos-animate" data-aos="fade-up" onsubmit="var errMsg = document.getElementById('swarmTypeErrorMsg'), swarmTypes = document.getElementsByName('course-radio-1'), hasSwarmType = !1; for (i = 0; i < swarmTypes.length; i++)swarmTypes[i].checked && (hasSwarmType = !0); errMsg.style.visibility = hasSwarmType ? 'hidden' : 'visible'; return hasSwarmType;">
                                 <div class="form-group">
                                     <div class="row">

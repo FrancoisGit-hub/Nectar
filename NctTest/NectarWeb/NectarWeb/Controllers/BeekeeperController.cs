@@ -15,6 +15,7 @@ namespace NectarWeb.Controllers
         {
             ViewBag.HasFooter = true;
             ViewBag.HasNavBackgroundImage = true;
+            ViewBag.IsPostBack = false;
             return View();
         }
 
@@ -22,7 +23,8 @@ namespace NectarWeb.Controllers
         public IActionResult ValidateSubscription(BeekeeperSubscriptionView model)
         {
             ViewBag.HasFooter = true;
-            ViewBag.HasNavBackgroundImage = false;
+            ViewBag.HasNavBackgroundImage = true;
+            ViewBag.IsPostBack = true;
             if (!ModelState.IsValid)
             {
                 return View("Subscription", model);
