@@ -5,12 +5,15 @@
     ViewData["MetaDescription"] = "Remplissez le formulaire, et soyez mis en relation avec des apiculteurs proche de chez vous grâce à la géolocalisation.";
     ViewData["KeyWords"] = "Essaim, abeilles, intervention";
 }
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
 <link rel="stylesheet" href="~/css/tools/MyCarousel.css?id=2" />
 <link rel="stylesheet" href="~/css/tools/FormValidation.css?id=4" />
 <link rel="stylesheet" href="~/css/pages/Search.css?id=8" />
 <link rel="stylesheet" href="~/css/tools/image-overlay-opacity.css?id=2" />
 
-<script src="~/js/pages/Beekeeper.js?id=2"></script>
+<script src="~/js/pages/Beekeeper.js?id=6"></script>
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -67,12 +70,13 @@
                 <div class="col">
                     <div class="row justify-content-center">
                         <div class="col-xl-8 col-md-10 vignett">
-                            <form asp-controller="Search" asp-action="BeekeeperResults" class="position-relative d-block aos-init aos-animate" data-aos="fade-up">
+                            <form asp-controller="Search" asp-action="BeekeeperResults" id="searchForm" class="position-relative d-block aos-init aos-animate" data-aos="fade-up" onsubmit="var errMsg = document.getElementById('swarmTypeErrorMsg'), swarmTypes = document.getElementsByName('course-radio-1'), hasSwarmType = !1; for (i = 0; i < swarmTypes.length; i++)swarmTypes[i].checked && (hasSwarmType = !0); errMsg.style.visibility = hasSwarmType ? 'hidden' : 'visible'; return hasSwarmType;">
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="form-group mb-1">
-                                                <label class="questions">Quel essaim avez-vous identifié ?</label>
+                                                <label class="questions">Quel essaim avez-vous identifié ?</label><br />
+                                                <span style="visibility:hidden;" class="field-validation-error errorMessage" id="swarmTypeErrorMsg">Vous devez sélectionner un type d'essaim.</span>
                                             </div>
                                         </div>
                                         <div class="col">

@@ -15,7 +15,7 @@ namespace NectarWeb.Models.ViewModels
     public string PostalCode { get; set; }
 
     [Display(Name ="Quel est votre numéro de téléphone ?")]
-    [RegularExpression("^(?!0+$)(\\+\\d{1,3}[- ]?)?(?!0+$)\\d{10,15}$", ErrorMessage = "Veuillez rentrer un numéro de téléphone valide")]
+    [RegularExpression("^(?:(?:\\+|00)33|0)\\s*[1-9](?:[\\s.-]*\\d{2}){4}$", ErrorMessage = "Veuillez rentrer un numéro de téléphone valide")]
     [Required(ErrorMessage = "Le numéro de téléphone est obligatoire")]
     public string PhoneNumber { get; set; }
 
